@@ -3,7 +3,7 @@
 <html lang="ko">
 
     <head>
-        <title>Huge Inc. 실습 v2</title>
+        <title>Huge Inc. 실습 v3</title>
 
         <meta charset="UTF-8">
         <meta name="author" content="H-Genie">
@@ -12,140 +12,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
         <link rel="stylesheet" type="text/CSS" href="css/destyle.css">
+        <link rel="stylesheet" type="text/CSS" href="css/home.css">
         
-        <style>
-
-            @font-face {font-family: Galaxie-Book; src: url(font/GalaxieCopernicus-Book.woff)}
-            @font-face {font-family: HugeGothic-Bold; src: url(font/HugeGothic-Bold.woff)}
-
-            h1 {font-family: HugeGothic-Bold; font-size: 300px; color: black; font-weight: 600;}
-            h2 {font-family: HugeGothic-Bold; font-size: 72px; font-weight: 100; color: white;}
-            p {font-family: Galaxie-Book; font-size: 14px; color: black; font-weight: 100;}
-
-
-            .logo_wrap {width: 74px; height: 74px; background-color: white; position: fixed; left:calc(50vw - 37px); top: 50px; display: flex; justify-content: center; align-items: center; z-index: 200;}
-            .logo_text {width: 48px; height: 48px; color: #ea178c; font-family: HugeGothic-Bold ; font-size: 36px; line-height: 48px; text-align: center;}
-          
-
-            .home_section {width: 100vw; height: 100vh;}
-            .home_section_wrap {width: 100vw; height: 100vh; background-color: white; display: flex; justify-content: center; align-items: center; position: relative;}
-            .home_section_footer_wrap {height: 90px; width: 100vw; background-color: white; position: absolute; bottom: 0; display: flex; justify-content: center; align-items: center; flex-direction: column;}
-            .home_section_footer_introduce {line-height: 60px;}
-            .home_section_footer_line {height: 30px; border-left: 1px solid black;}
-
-
-            .section_01_wrap {width: 100vw; height: 100vh; box-sizing: border-box; display: flex; background-image: url(img/hugeinc01.png); background-size: cover;}
-
-            .section_01_index {width: 12.5vw; height: 100vh; padding-top: 20vh; box-sizing: border-box;}
-            .section_01_index_wrap {display: flex; justify-content: flex-end;}
-            .section_01_index_number {font-family: HugeGothic-Bold; font-size: 22px; font-weight: 100; line-height: 22px; color: white; margin-right: 15px; letter-spacing: 1px;}
-            .section_01_index_line {border-bottom: 1px solid white; width: 5vw; height: 11px;}
-
-            .section_01_content {width: 75vw; height: 100vh; padding: 20vh 0; padding-left: 15px; box-sizing: border-box;}
-            .section_01_content_wrap {width: 45%; height: 60vh;}
-            .section_01_content_subtitle {font-family: HugeGothic-Bold; font-size: 22px; font-weight: 100; color: white; line-height: 22px; letter-spacing: 1px;}
-            .section_01_content_subwrap {width: 100%; height: calc(100% - 22px); display: flex; flex-direction: column; justify-content: center;}
-            .section_01_content_title_hr {border-top: 1px solid white; width: 5vw; margin: 30px 0;}
-            .section_01_content_discription {width: 85%; font-family: Galaxie-Book; font-size: 18px; line-height: 28px; color: white;}
-            
-
-            .section_02_wrap {width: 100vw; height: 100vh; background-image: url(img/hugeinc02.png); background-size: cover; display: flex; box-sizing: border-box;}
-            
-            .section_02_index {width: 12.5vw; height: 100vh; padding-top: 20vh; box-sizing: border-box;}
-            .section_02_index_wrap {display: flex; justify-content: flex-end;}
-            .section_02_index_number {font-family: HugeGothic-Bold; font-size: 22px; font-weight: 100; line-height: 22px; letter-spacing: 1px; color: white; margin-right: 15px;}
-            .section_02_index_line {width: 5vw; height: 11px; border-bottom: 1px solid white;}
-
-            .section_02_content {width: 75vw; height: 100vh; padding: 20vh 0; padding-left: 15px; box-sizing: border-box;}
-            .section_02_content_wrap {width: 45%; height: 60vh;}
-            .section_02_content_subtitle {font-family: HugeGothic-Bold; font-size: 22px; font-weight: 100; line-height: 22px; color: white;}
-            .section_02_content_subwrap {width: 100%; height: calc(100% - 22px); display: flex; flex-direction: column; justify-content: center;}
-            .section_02_content_hr {width: 5vw; margin: 30px 0; border-top: 1px solid white;}
-            .section_02_content_description {width: 85%; font-family: Galaxie-Book; font-size: 18px; line-height: 28px; color: white;}
-
-
-            .section_03_wrap {width: 100vw; height: 100vh; background-image: url(img/hugeinc03.png); background-size: cover; display: flex; box-sizing: border-box;}
-            
-            .section_03_index {width: 12.5vw; height: 100vh; padding-top: 20vh; box-sizing: border-box;}
-            .section_03_index_wrap {display: flex; justify-content: flex-end;}
-            .section_03_index_number {font-family: HugeGothic-Bold; font-size: 22px; font-weight: 100; line-height: 22px; letter-spacing: 1px; color: black; margin-right: 15px;}
-            .section_03_index_line {width: 5vw; height: 11px; border-bottom: 1px solid black;}
-
-            .section_03_content {width: 75vw; height: 100vh; padding: 20vh 0; padding-left: 15px; box-sizing: border-box;}
-            .section_03_content_wrap {width: 45%; height: 60vh;}
-            .section_03_content_subtitle {font-family: HugeGothic-Bold; font-size: 22px; font-weight: 100; line-height: 22px; color: black;}
-            .section_03_content_subwrap {width: 100%; height: calc(100% - 22px); display: flex; flex-direction: column; justify-content: center;}
-            .section_03_content_title {color: black;}
-            .section_03_content_hr {width: 5vw; margin: 30px 0; border-top: 1px solid black;}
-            .section_03_content_description {width: 85%; font-family: Galaxie-Book; font-size: 18px; line-height: 28px; color: black;}
-
-
-            .section_04_wrap {width: 100vw; height: 100vh; background-image: url(img/hugeinc04.png); background-size: cover; display: flex; box-sizing: border-box;}
-            
-            .section_04_index {width: 12.5vw; height: 100vh; padding-top: 20vh; box-sizing: border-box;}
-            .section_04_index_wrap {display: flex; justify-content: flex-end;}
-            .section_04_index_number {font-family: HugeGothic-Bold; font-size: 22px; font-weight: 100; line-height: 22px; letter-spacing: 1px; color: white; margin-right: 15px;}
-            .section_04_index_line {width: 5vw; height: 11px; border-bottom: 1px solid white;}
-
-            .section_04_content {width: 75vw; height: 100vh; padding: 20vh 0; padding-left: 15px; box-sizing: border-box;}
-            .section_04_content_wrap {width: 45%; height: 60vh;}
-            .section_04_content_subtitle {font-family: HugeGothic-Bold; font-size: 22px; font-weight: 100; line-height: 22px; color: white;}
-            .section_04_content_subwrap {width: 100%; height: calc(100% - 22px); display: flex; flex-direction: column; justify-content: center;}
-            .section_04_content_hr {width: 5vw; margin: 30px 0; border-top: 1px solid white;}
-            .section_04_content_description {width: 85%; font-family: Galaxie-Book; font-size: 18px; line-height: 28px; color: white;}
-
-
-            .section_05_wrap {width: 100vw; height: 100vh; background-image: url(img/hugeinc05.jpg); background-size: cover; display: flex; box-sizing: border-box;}
-            
-            .section_05_index {width: 12.5vw; height: 100vh; padding-top: 20vh; box-sizing: border-box;}
-            .section_05_index_wrap {display: flex; justify-content: flex-end;}
-            .section_05_index_number {font-family: HugeGothic-Bold; font-size: 22px; font-weight: 100; line-height: 22px; letter-spacing: 1px; color: black; margin-right: 15px;}
-            .section_05_index_line {width: 5vw; height: 11px; border-bottom: 1px solid black;}
-
-            .section_05_content {width: 75vw; height: 100vh; padding: 20vh 0; padding-left: 15px; box-sizing: border-box;}
-            .section_05_content_wrap {width: 45%; height: 60vh;}
-            .section_05_content_subtitle {font-family: HugeGothic-Bold; font-size: 22px; font-weight: 100; line-height: 22px; color: black;}
-            .section_05_content_subwrap {width: 100%; height: calc(100% - 22px); display: flex; flex-direction: column; justify-content: center;}
-            .section_05_content_title {color: black;}
-            .section_05_content_hr {width: 5vw; margin: 30px 0; border-top: 1px solid black;}
-            .section_05_content_description {width: 85%; font-family: Galaxie-Book; font-size: 18px; line-height: 28px; color: black;}
-
-
-            .section_06_wrap {width: 100vw; height: 100vh; background-image: url(img/hugeinc06.jpg); background-size: cover; display: flex; box-sizing: border-box;}
-            
-            .section_06_index {width: 12.5vw; height: 100vh; padding-top: 20vh; box-sizing: border-box;}
-            .section_06_index_wrap {display: flex; justify-content: flex-end;}
-            .section_06_index_number {font-family: HugeGothic-Bold; font-size: 22px; font-weight: 100; line-height: 22px; letter-spacing: 1px; color: white; margin-right: 15px;}
-            .section_06_index_line {width: 5vw; height: 11px; border-bottom: 1px solid white;}
-
-            .section_06_content {width: 75vw; height: 100vh; padding: 20vh 0; padding-left: 15px; box-sizing: border-box;}
-            .section_06_content_wrap {width: 45%; height: 60vh;}
-            .section_06_content_subtitle {font-family: HugeGothic-Bold; font-size: 22px; font-weight: 100; line-height: 22px; color: white;}
-            .section_06_content_subwrap {width: 100%; height: calc(100% - 22px); display: flex; flex-direction: column; justify-content: center;}
-            .section_06_content_hr {width: 5vw; margin: 30px 0; border-top: 1px solid white;}
-            .section_06_content_description {width: 85%; font-family: Galaxie-Book; font-size: 18px; line-height: 28px; color: white;}
-
-
-            .section_07_wrap {width: 100vw; height: 100vh; background-image: url(img/hugeinc07.jpg); background-size: cover; display: flex; box-sizing: border-box;}
-            
-            .section_07_index {width: 12.5vw; height: 100vh; padding-top: 20vh; box-sizing: border-box;}
-            .section_07_index_wrap {display: flex; justify-content: flex-end;}
-            .section_07_index_number {font-family: HugeGothic-Bold; font-size: 22px; font-weight: 100; line-height: 22px; letter-spacing: 1px; color: black; margin-right: 15px;}
-            .section_07_index_line {width: 5vw; height: 11px; border-bottom: 1px solid black;}
-
-            .section_07_content {width: 75vw; height: 100vh; padding: 20vh 0; padding-left: 15px; box-sizing: border-box;}
-            .section_07_content_wrap {width: 45%; height: 60vh;}
-            .section_07_content_subtitle {font-family: HugeGothic-Bold; font-size: 22px; font-weight: 100; line-height: 22px; color: black;}
-            .section_07_content_subwrap {width: 100%; height: calc(100% - 22px); display: flex; flex-direction: column; justify-content: center;}
-            .section_07_content_title {color: black;}
-            .section_07_content_hr {width: 5vw; margin: 30px 0; border-top: 1px solid black;}
-            .section_07_content_description {width: 85%; font-family: Galaxie-Book; font-size: 18px; line-height: 28px; color: black;}
-
-
-        </style>
-
-        <script></script>
-
     </head>
 
 
@@ -160,16 +28,16 @@
 
 
 
-         <!--Home_section-->
-        <section class="home_section">
+         <!--Home-->
+        <section class="home">
 
-            <div class="home_section_wrap">    
+            <div class="home_wrap">    
 
-                <h1 class="home_section_title">Hello.</h1>     
+                <h1 class="home_title">Hello.</h1>     
            
-                <div class="home_section_footer_wrap">
-                    <p class="home_section_footer_introduce">Today at Huge.</p>
-                    <div class="home_section_footer_line"></div>
+                <div class="home_footer_wrap">
+                    <p class="home_footer_introduce">Today at Huge.</p>
+                    <div class="home_footer_line"></div>
                 </div>
 
             </div> 
@@ -179,36 +47,36 @@
 
 
         <!--section_01-->
-        <section class="section_01">
+        <section class="section">
 
-            <div class="section_01_wrap">
+            <div class="section_wrap background_section_01">
 
-                <div class="section_01_index">
+                <div class="section_index">
 
-                    <div class="section_01_index_wrap">
-                        <p class="section_01_index_number">01.</p>
-                        <div class="section_01_index_line"></div>
+                    <div class="section_index_wrap">
+                        <p class="section_index_number">01.</p>
+                        <div class="section_index_line"></div>
                     </div>
 
                 </div>
 
 
-                <div class="section_01_content">
+                <div class="section_content">
 
-                    <div class="section_01_content_wrap">
-                        <div class="section_01_content_subtitle">Win.</div>
+                    <div class="section_content_wrap">
+                        <div class="section_content_subtitle">Win.</div>
 
-                        <div class="section_01_content_subwrap">
-                            <h2 class="section_01_content_title">Huge Thanks.</h2>
-                            <div class="section_01_content_title_hr"></div>
-                            <p class="section_01_content_discription">Compaign US named Huge its 2019 Innovation Agencey of the year.</p>
+                        <div class="section_content_subwrap">
+                            <h2 class="section_content_title">Huge Thanks.</h2>
+                            <div class="section_content_title_hr"></div>
+                            <p class="section_content_description">Compaign US named Huge its 2019 Innovation Agencey of the year.</p>
                         </div>
                     </div>
 
                 </div>
 
 
-                <div class="section_01_detail"> </div>
+                <div class="section_detail"> </div>
            
             </div>
 
@@ -217,32 +85,32 @@
 
 
         <!--section_02-->
-        <section class="section_02">
+        <section class="section">
 
-            <div class="section_02_wrap">
+            <div class="section_wrap background_section_02">
 
-                <div class="section_02_index">
+                <div class="section_index">
 
-                    <div class="section_02_index_wrap">
+                    <div class="section_index_wrap">
 
-                        <p class="section_02_index_number">02.</p>
-                        <div class="section_02_index_line"></div>
+                        <p class="section_index_number">02.</p>
+                        <div class="section_index_line"></div>
 
                     </div>
 
                 </div>
                 
 
-                <div class="section_02_content">
+                <div class="section_content">
 
-                    <div class="section_02_content_wrap">
+                    <div class="section_content_wrap">
 
-                        <div class="section_02_content_subtitle">Work.</div>
-                        <div class="section_02_content_subwrap">
+                        <div class="section_content_subtitle">Work.</div>
+                        <div class="section_content_subwrap">
 
-                            <h2 class="section_02_content_title">#FreeThePeriod.</h2>
-                            <div class="section_02_content_hr"></div>
-                            <p class="section_02_content_description">To highlight period inequality, Huge partnered with PERIOD. to build a coin-operated toilet paper dispenser and installed it in men's restrooms.</p>
+                            <h2 class="section_content_title">#FreeThePeriod.</h2>
+                            <div class="section_content_title_hr"></div>
+                            <p class="section_content_description color_white">To highlight period inequality, Huge partnered with PERIOD. to build a coin-operated toilet paper dispenser and installed it in men's restrooms.</p>
 
                         </div>
 
@@ -250,7 +118,7 @@
 
                 </div>
                 
-                <div class="section_02_detail"></div>
+                <div class="section_detail"></div>
 
             </div>
 
@@ -259,32 +127,32 @@
 
 
         <!--section_03-->
-        <section class="section_03">
+        <section class="section">
 
-            <div class="section_03_wrap">
+            <div class="section_wrap background_section_03">
 
-                <div class="section_03_index">
+                <div class="section_index">
 
-                    <div class="section_03_index_wrap">
+                    <div class="section_index_wrap">
 
-                        <p class="section_03_index_number">03.</p>
-                        <div class="section_03_index_line"></div>
+                        <p class="section_index_number color_black">03.</p>
+                        <div class="section_index_line borderbottom_color_black"></div>
 
                     </div>
 
                 </div>
                 
 
-                <div class="section_03_content">
+                <div class="section_content">
 
-                    <div class="section_03_content_wrap">
+                    <div class="section_content_wrap">
 
-                        <div class="section_03_content_subtitle">Leadership.</div>
-                        <div class="section_03_content_subwrap">
+                        <div class="section_content_subtitle color_black">Leadership.</div>
+                        <div class="section_content_subwrap">
 
-                            <h2 class="section_03_content_title">Huge Appointment.</h2>
-                            <div class="section_03_content_hr"></div>
-                            <p class="section_03_content_description">After three years leading global strategic growth for Huge, Matt Weiss has been appointed President, Huge BK.</p>
+                            <h2 class="section_content_title color_black">Huge Appointment.</h2>
+                            <div class="section_content_title_hr bordertop_color_black"></div>
+                            <p class="section_content_description color_black">After three years leading global strategic growth for Huge, Matt Weiss has been appointed President, Huge BK.</p>
 
                         </div>
 
@@ -292,7 +160,7 @@
 
                 </div>
                 
-                <div class="section_03_detail"></div>
+                <div class="section_detail"></div>
 
             </div>
 
@@ -301,32 +169,32 @@
 
 
        <!--section_04-->
-        <section class="section_04">
+        <section class="section">
 
-            <div class="section_04_wrap">
+            <div class="section_wrap background_section_04">
 
-                <div class="section_04_index">
+                <div class="section_index">
 
-                    <div class="section_04_index_wrap">
+                    <div class="section_index_wrap">
 
-                        <p class="section_04_index_number">04.</p>
-                        <div class="section_04_index_line"></div>
+                        <p class="section_index_number">04.</p>
+                        <div class="section_index_line"></div>
 
                     </div>
 
                 </div>
                 
 
-                <div class="section_04_content">
+                <div class="section_content">
 
-                    <div class="section_04_content_wrap">
+                    <div class="section_content_wrap">
 
-                        <div class="section_04_content_subtitle">Work.</div>
-                        <div class="section_04_content_subwrap">
+                        <div class="section_content_subtitle">Work.</div>
+                        <div class="section_content_subwrap">
 
-                            <h2 class="section_04_content_title">It's in the bag.</h2>
-                            <div class="section_04_content_hr"></div>
-                            <p class="section_04_content_description">Huge rebrands grocery delivery service Shipt.</p>
+                            <h2 class="section_content_title">It's in the bag.</h2>
+                            <div class="section_content_title_hr"></div>
+                            <p class="section_content_description color_white">Huge rebrands grocery delivery service Shipt.</p>
 
                         </div>
 
@@ -334,7 +202,7 @@
 
                 </div>
                 
-                <div class="section_04_detail"></div>
+                <div class="section_detail"></div>
 
             </div>
 
@@ -342,33 +210,33 @@
      
 
 
-        <!--section_05>-->
-        <section class="section_05">
+        <!--section_05-->
+        <section class="section">
 
-            <div class="section_05_wrap">
+            <div class="section_wrap background_section_05 color_black">
 
-                <div class="section_05_index">
+                <div class="section_index">
 
-                    <div class="section_05_index_wrap">
+                    <div class="section_index_wrap">
 
-                        <p class="section_05_index_number">05.</p>
-                        <div class="section_05_index_line"></div>
+                        <p class="section_index_number color_black">05.</p>
+                        <div class="section_index_line borderbottom_color_black"></div>
 
                     </div>
 
                 </div>
                 
 
-                <div class="section_05_content">
+                <div class="section_content">
 
-                    <div class="section_05_content_wrap">
+                    <div class="section_content_wrap">
 
-                        <div class="section_05_content_subtitle">Leadership.</div>
-                        <div class="section_05_content_subwrap">
+                        <div class="section_content_subtitle color_black">Leadership.</div>
+                        <div class="section_content_subwrap">
 
-                            <h2 class="section_05_content_title">Hello Fura.</h2>
-                            <div class="section_05_content_hr"></div>
-                            <p class="section_05_content_description">Huge welcomes Fura Johannesdottir as Chief Design Officer.</p>
+                            <h2 class="section_content_title color_black">Hello Fura.</h2>
+                            <div class="section_content_title_hr bordertop_color_black "></div>
+                            <p class="section_content_description color_black">Huge welcomes Fura Johannesdottir as Chief Design Officer.</p>
 
                         </div>
 
@@ -376,7 +244,7 @@
 
                 </div>
                 
-                <div class="section_05_detail"></div>
+                <div class="section_detail"></div>
 
             </div>
 
@@ -385,32 +253,32 @@
 
 
         <!--section_06-->
-        <section class="section_06">
+        <section class="section">
 
-            <div class="section_06_wrap">
+            <div class="section_wrap background_section_06">
 
-                <div class="section_06_index">
+                <div class="section_index">
 
-                    <div class="section_06_index_wrap">
+                    <div class="section_index_wrap">
 
-                        <p class="section_06_index_number">06.</p>
-                        <div class="section_06_index_line"></div>
+                        <p class="section_index_number">06.</p>
+                        <div class="section_index_line"></div>
 
                     </div>
 
                 </div>
                 
 
-                <div class="section_06_content">
+                <div class="section_content">
 
-                    <div class="section_06_content_wrap">
+                    <div class="section_content_wrap">
 
-                        <div class="section_06_content_subtitle">Work.</div>
-                        <div class="section_06_content_subwrap">
+                        <div class="section_content_subtitle">Work.</div>
+                        <div class="section_content_subwrap">
 
-                            <h2 class="section_06_content_title">#ColorCommentary.</h2>
-                            <div class="section_06_content_hr"></div>
-                            <p class="section_06_content_description">Huge partnered with Pantone on a social media campaign for the Big Game.</p>
+                            <h2 class="section_content_title">#ColorCommentary.</h2>
+                            <div class="section_content_title_hr"></div>
+                            <p class="section_content_description color_white">Huge partnered with Pantone on a social media campaign for the Big Game.</p>
 
                         </div>
 
@@ -418,7 +286,7 @@
 
                 </div>
                 
-                <div class="section_06_detail"></div>
+                <div class="section_detail"></div>
 
             </div>
 
@@ -427,32 +295,32 @@
 
 
         <!--section_07>-->
-        <section class="section_07">
+        <section class="section">
 
-            <div class="section_07_wrap">
+            <div class="section_wrap background_section_07">
 
-                <div class="section_07_index">
+                <div class="section_index">
 
-                    <div class="section_07_index_wrap">
+                    <div class="section_index_wrap">
 
-                        <p class="section_07_index_number">07.</p>
-                        <div class="section_07_index_line"></div>
+                        <p class="section_index_number color_black">07.</p>
+                        <div class="section_index_line borderbottom_color_black"></div>
 
                     </div>
 
                 </div>
                 
 
-                <div class="section_07_content">
+                <div class="section_content">
 
-                    <div class="section_07_content_wrap">
+                    <div class="section_content_wrap">
 
-                        <div class="section_07_content_subtitle">Culture.</div>
-                        <div class="section_07_content_subwrap">
+                        <div class="section_content_subtitle color_black">Culture.</div>
+                        <div class="section_content_subwrap">
 
-                            <h2 class="section_07_content_title">Black History Month.</h2>
-                            <div class="section_07_content_hr"></div>
-                            <p class="section_07_content_description">This is not a moment, issa movement. H by Jacqueline DeBerry</p>
+                            <h2 class="section_content_title color_black">Black History Month.</h2>
+                            <div class="section_content_title_hr bordertop_color_black"></div>
+                            <p class="section_content_description color_black">This is not a moment, issa movement. H by Jacqueline DeBerry</p>
 
                         </div>
 
@@ -460,11 +328,45 @@
 
                 </div>
                 
-                <div class="section_07_detail"></div>
+                <div class="section_detail"></div>
 
             </div>
 
         </section>
+
+
+
+         <!--footer-->
+         <footer class="section_footer" style="width: 100vw; height: 25vh; background-color: black;
+         display: flex; justify-content: space-around; align-items: center;">
+ 
+             <div class="section_footer_left_wrap" style="width: fit-content; display: flex; align-items: center;">
+                 <h2 class="section_footer_left_huge" style="font-size: 40px;">Huge</h2>
+                 <div class="section_footer_left_line" style="height: 40px; border-left: 1px solid white; margin: 0 30px; box-sizing: border-box;"></div>
+                 <p class="section_footer_left_introduce" style="font-size: 18px; color: white;">Make something you love.</p>
+             </div>
+ 
+             <div class="section_footer_right_wrap" style="width: fit-content; display: flex; flex-direction: column;">
+ 
+                 <div class="section_footer_right_menu" style="width: 20vw; line-height: 40px; display: flex; justify-content: space-between;">
+                     <p style="font-family: HugeGothic-Bold; font-size: 18px; color: #c8c8c8;">Hello</p>
+                     <p style="font-family: HugeGothic-Bold; font-size: 18px; color: #c8c8c8;">Work</p>
+                     <p style="font-family: HugeGothic-Bold; font-size: 18px; color: #c8c8c8;">About</p>
+                     <p style="font-family: HugeGothic-Bold; font-size: 18px; color: #c8c8c8;">careers</p>
+                     <p style="font-family: HugeGothic-Bold; font-size: 18px; color: #c8c8c8;">contact</p>
+                 </div>
+ 
+                 <div class="section_footer_right_legal">
+                    
+                     <p style="color: #c8c8c8; line-height: 24px; display: flex; justify-content: flex-end;">© 2020 Huge LLC. Legal.</p>
+                     <p style="color: #c8c8c8; line-height: 24px; display: flex; justify-content: flex-end;">CCPA Privacy Notice</p>
+                     <p style="color: #c8c8c8; line-height: 24px; display: flex; justify-content: flex-end;">Modern Slavery Act Statement</p>
+                     
+                 </div>
+ 
+             </div>
+ 
+         </footer>
     
 
     </body>
