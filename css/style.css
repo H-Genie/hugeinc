@@ -1,0 +1,75 @@
+@import url("destyle.css");
+
+@font-face {font-family: HugeGothic-Bold; src: url(../font/HugeGothic-Bold.woff)}
+@font-face {font-family: Copernicus; src: url(../font/GalaxieCopernicus-Book.woff)}
+
+
+
+/* logo */
+.logo_wrap {width: 74px; height: 74px; background-color: white; display: flex; justify-content: center; align-items: center; position: fixed; top: 50px; left: calc(50vw - 37px); z-index: 200;}
+    .logo_wrap p {width: 48px; height: 48px; background-color: white; font-family: HugeGothic-Bold; font-size: 36px; color: #EA178C; display: flex; justify-content: center; align-items: center;}
+
+
+
+/* home */
+.home_wrap {width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; position: relative;}
+
+    .home_wrap h1 {font-family: HugeGothic-Bold; font-size: 300px;}
+    
+    .home_wrap .bottom {width: 100vw; height: 90px; display: flex; flex-direction: column;justify-content: center; align-items: center;  position: absolute; bottom: 0;}
+        .home_wrap .bottom p {line-height: 60px; font-family: Copernicus;}
+        .home_wrap .bottom div {height: 30px; border-left: 1px solid black;}
+
+
+
+/* section */
+.section {width: 100vw; height: 100vh; display: flex;}
+    
+    .section .index {width: 12.5vw; height: 100vh; padding-top: 20vh; box-sizing: border-box;}
+        .section .index .wrap {display: flex; justify-content: flex-end;}
+            .section .index p {line-height: 22px; font-family: HugeGothic-Bold; font-size: 22px; letter-spacing: 1px; margin-right: 15px;}
+            .section .index .wrap div {width: 5vw; height: 11px;}
+
+    .section .content {width: 75vw; height: 100vh; padding: 20vh 0; padding-left: 15px; box-sizing: border-box;}
+        .section .content > p {line-height: 22px; font-family: HugeGothic-Bold; font-size: 22px; letter-spacing: 1px;:}
+        .section .content .subwrap {width: 45%; height: 60vh; display: flex; flex-direction: column; justify-content: center;}
+            .section .content .subwrap h2 {font-family: HugeGothic-Bold; font-size: 72px;}
+            .section .content .subwrap div {width: 5vw; margin: 30px 0;}
+            .section .content .subwrap p {width: 85%; line-height: 28px; font-family: Copernicus; font-size: 18px;}
+
+    .section .detail {width: 12.5vw; height: 100vh;}
+
+
+
+/* footer */
+.footer {width: 100vw; height: 240px; display: flex; justify-content: center; }
+
+    .footer .wrap {width: 75vw; padding: 70px 15px 87px; box-sizing: border-box; display: flex; justify-content: space-between;}
+    
+        .footer .wrap .left {display: flex; padding-top: 5px; box-sizing: border-box;}
+            .footer .wrap .left div {height: 36px; font-family: HugeGothic-Bold; font-size: 36px; letter-spacing: 2px; padding-right: 32px; box-sizing: border-box; border-right: 1px solid #888888; margin-right: 32px;}
+            .footer .wrap .left p {line-height: 36px; font-family: HugeGothic-Bold; font-size: 18px; letter-spacing: 1px;}
+
+        
+            .footer .wrap .right a {line-height: 24px; font-family: HugeGothic-Bold; font-size: 14px; color: #c8c8c8; letter-spacing: 1px; margin-right: 16px;}
+            .footer .wrap .right a:nth-child(5) {margin-right: 0;}
+            .footer .wrap .right p {line-height: 20px; font-family: Copernicus; font-size: 12px; color: #c8c8c8; text-align: end; margin-top: 10px;}
+
+
+
+/* background_image */
+.bg_img_section_01 {background-image: url(../img/hugeinc01.png); background-size: cover; background-repeat: no-repeat;}
+.bg_img_section_02 {background-image: url(../img/hugeinc02.png); background-size: cover; background-repeat: no-repeat;}
+.bg_img_section_03 {background-image: url(../img/hugeinc03.png); background-size: cover; background-repeat: no-repeat;}
+.bg_img_section_04 {background-image: url(../img/hugeinc04.png); background-size: cover; background-repeat: no-repeat;}
+.bg_img_section_05 {background-image: url(../img/hugeinc05.jpg); background-size: cover; background-repeat: no-repeat;}
+.bg_img_section_06 {background-image: url(../img/hugeinc06.jpg); background-size: cover; background-repeat: no-repeat;}
+.bg_img_section_07 {background-image: url(../img/hugeinc07.jpg); background-size: cover; background-repeat: no-repeat;}
+
+
+
+/* color */
+.border_bottom_black {border-bottom: 1px solid black;}
+.border_bottom_white {border-bottom: 1px solid white;}
+.font_white {color: white;}
+.bg_black {background-color: black;}
