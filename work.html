@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+    <head>
+
+        <title>Work.</title>
+
+        <meta charset="UTF-8">
+        <meta name="author" content="H-Genie">
+        <meta name="description" content=" ">
+        <meta name="keywords" content=" ">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" type="text/css" href="css/work.css">
+        <link rel="icon" href="img/icon.png" sizes="16x16">
+
+        <script>
+            var header_state = 0; /*변수 선언 : 이름은 내가 짓기 나름*/ 
+
+            function logoClick() {       
+            if (header_state == 0) {
+            document.getElementById("section_header").style="visibility:visible;";
+            header_state = 1;}
+            else {document.getElementById("section_header").style="visibility:hidden;";
+            header_state = 0;} 
+            }
+        </script>
+
+    </head>
+
+    <body>
+
+        <!--logo-->
+        <div class="logo_wrap" id="logo" onclick="logoClick()"> <!--함수 이름 지정-->
+            <p>H</p>
+        </div>
+
+
+        <!--header-->
+        <header id="section_header">
+
+            <nav>
+                <ul class="menu_wrap">
+                    <li>
+                        <a href="index.html">Hello.</a>
+                        <p>Today at Huge.</p>
+                        <div></div>
+                    </li>
+    
+                    <li>
+                        <a href="work.html">Work.</a>
+                        <p>What we've mad.</p>
+                        <div></div>
+                    </li>
+    
+                    <li>
+                        <a>About.</a>
+                        <p>Who we are.</p>
+                        <div></div>
+                    </li>
+    
+                    <li>
+                        <a>Careers.</a>
+                        <p>Join the team.</p>
+                        <div></div>
+                    </li>
+    
+                    <li>
+                        <a>Contact.</a>
+                        <p>Get in touch.</p>
+                        <div></div>
+                    </li>         
+                </ul>
+    
+                <div class="gnb_aside">
+                    <p>Explore our thought leadership at</p>
+                    <a>MAGENTA<span>.</span></a>
+                </div>
+            </nav>
+    
+        </header>
+
+
+
+        <!--video-->
+        <section style="position: relative;">
+
+            <video style="min-width: 100vw; min-height: 100vh;" autoplay muted loop>
+
+                <source src="video/work.mp4" type="video/mp4">
+                당신의 브라우저는 이 비디오 형식을 지원하지 않습니다.
+
+            </video>
+
+            <h2 style="width: 200px; height: 100px; background-color: rgba(234,23,140,0.6); color: white; position: absolute; top: 45vh; left:45vw;">Hello.</h2>
+
+        </section>
+
+
+    <!--body 끝--></body> 
+
+</html>
