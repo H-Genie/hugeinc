@@ -4,7 +4,7 @@
 
     <head>
 
-        <title>Huge Inc. 실습 v4</title>
+        <title>Huge Inc. 실습 v4.3</title>
 
         <meta charset="UTF-8">
         <meta name="author" content="H-Genie">
@@ -12,8 +12,20 @@
         <meta name="keywords" content=" ">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/home.css">
         <link rel="icon" href="img/icon.png" sizes="16x16">
+
+        <script>
+            var header_state = 0; /*변수 선언 : 이름은 내가 짓기 나름*/ 
+
+            function logoClick() {       
+            if (header_state == 0) {
+            document.getElementById("section_header").style="visibility:visible;";
+            header_state = 1;}
+            else {document.getElementById("section_header").style="visibility:hidden;";
+            header_state = 0;} 
+            }
+        </script>
 
     </head>
 
@@ -22,13 +34,60 @@
     <body>
 
         <!--logo-->
-        <div class="logo_wrap">
+        <div class="logo_wrap" id="logo" onclick="logoClick()"> <!--함수 이름 지정-->
             <p>H</p>
         </div>
 
 
+
+        <!--header-->
+        <header id="section_header">
+
+            <nav>
+                <ul class="menu_wrap">
+                    <li>
+                        <a href="index.html">Hello.</a>
+                        <p>Today at Huge.</p>
+                        <div></div>
+                    </li>
+    
+                    <li>
+                        <a href="work.html">Work.</a>
+                        <p>What we've mad.</p>
+                        <div></div>
+                    </li>
+    
+                    <li>
+                        <a>About.</a>
+                        <p>Who we are.</p>
+                        <div></div>
+                    </li>
+    
+                    <li>
+                        <a>Careers.</a>
+                        <p>Join the team.</p>
+                        <div></div>
+                    </li>
+    
+                    <li>
+                        <a>Contact.</a>
+                        <p>Get in touch.</p>
+                        <div></div>
+                    </li>         
+                </ul>
+    
+                <div class="gnb_aside">
+                    <p>Explore our thought leadership at</p>
+                    <a>MAGENTA<span>.</span></a>
+                </div>
+            </nav>
+    
+        </header>
+
+
+
         <!--home-->
-        <section class="home_wrap">
+        <section class="home_wrap" id="section_home">
            
             <h1>Hello.</h1>
 
@@ -42,7 +101,7 @@
 
 
         <!--section_01 (white)-->
-        <section class="section bg_img_section_01">
+        <section class="section bg_img_section_01" id="section_01">
 
             <div class="index">
                 <div class="wrap">
@@ -67,7 +126,7 @@
 
 
          <!--section_02 (white)-->
-         <section class="section bg_img_section_02">
+         <section class="section bg_img_section_02" id="section_02">
 
             <div class="index">
                 <div class="wrap">
@@ -92,7 +151,7 @@
 
 
          <!--section_03 (black)-->
-         <section class="section bg_img_section_03">
+         <section class="section bg_img_section_03" id="section_03">
 
             <div class="index">
                 <div class="wrap">
@@ -117,7 +176,7 @@
 
         
          <!--section_04 (white)-->
-         <section class="section bg_img_section_04">
+         <section class="section bg_img_section_04" id="section_04">
 
             <div class="index">
                 <div class="wrap">
@@ -142,7 +201,7 @@
 
 
         <!--section_05 (black)-->
-        <section class="section bg_img_section_05">
+        <section class="section bg_img_section_05" id="section_05">
 
             <div class="index">
                 <div class="wrap">
@@ -167,7 +226,7 @@
 
 
         <!--section_06 (white)-->
-        <section class="section bg_img_section_06">
+        <section class="section bg_img_section_06" id="section_06">
 
             <div class="index">
                 <div class="wrap">
@@ -192,7 +251,7 @@
 
 
         <!--section_07 (black)-->
-        <section class="section bg_img_section_07">
+        <section class="section bg_img_section_07" id="section_07">
 
             <div class="index">
                 <div class="wrap">
@@ -217,7 +276,7 @@
 
 
          <!--footer-->
-         <footer class="footer bg_black">
+         <footer class="footer bg_black" id="section_footer">
 
             <div class="wrap">
 
@@ -226,20 +285,20 @@
                     <p class="font_white">Make something you love.</p>
                 </div>
 
-                <div class="right">
-                    <div>
-                        <a href="">Hello</a>
-                        <a href="">Work</a>
+                <ul class="right">
+                    <li>
+                        <a href="index.html">Hello</a>
+                        <a href="work.html">Work</a>
                         <a href="">About</a>
                         <a href="">Careers</a>
                         <a href="">Contact</a>                        
-                    </div>
+                    </li>
 
                     <p>© 2020 Huge LLC. Legal. <br>
                         CCPA Privacy Notice <br>
                         Modern Slavery Act Statement
                     </p>
-                </div>
+                </ul>
 
             </div>
 
