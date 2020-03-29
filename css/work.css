@@ -1,2 +1,50 @@
-/* WORK */
+/* WORK v4.3 */
+
 @import url("common.css");
+
+
+/* video */
+.section_video {position: relative;}
+
+    .section_video video {min-width: 100vw; min-height: 100vh;}
+
+    .video_button {width: 74px; height: 74px; background-color: rgba(234, 23, 140, 0.6); position: absolute; top: calc(50vh - 37px); left: calc(50vw - 37px); display: flex; justify-content: center; align-items: center;}
+    .video_button div {width: 16px; height: 16px; color: white;}
+
+
+/* photo */
+.section_photo {width: 100vw; background-color: black;}
+
+.section_photo >div:nth-child(1) {padding: 70px 0; box-sizing: border-box; display: flex; justify-content: center;}
+.section_photo p {font-size: 56px; color: white;}
+
+.section_photo >div:nth-child(2) {margin: 0 5vw; flex-direction: column; padding-bottom: 70px; box-sizing: border-box;}
+.section_photo ul {display: flex;}
+.section_photo ul li {width: 30vw; height: 30vw; background-size: cover; position: relative;}
+.section_photo ul h2 {font-size: 44px; position: absolute; bottom: 32px; left: 44px; color: white;}
+
+
+/* client */
+.section_client {width: 100vw; background-color: #111111; display: flex; justify-content: center;}
+    .section_client >div {width: 75vw; padding: 140px 0; display: flex;}
+
+        .section_client .left {width: 33%;}
+        .section_client .left div:nth-child(1) {width: 40%; border-top: 1px solid white; margin-bottom: 20px;}
+        .section_client .left div:nth-child(2) {font-family: HugeGothic-Bold; font-size: 22px; color: white;}
+
+        .section_client .right {width: 67%;}
+        .section_client ul {display: flex;}
+        .section_client li {width: 25%; margin: 0 50px 50px 0;}
+        .section_client li:nth-child(4) {margin-right: 0;}
+        .section_client img {width: 110px; height: 90px;}
+
+
+/* magenta */
+.section_magenta {width: 100vw; background-size: cover; display: flex; align-items: center;}
+    .section_magenta .left {padding: 200px 0; box-sizing: border-box;}
+    .section_magenta img {width: 270px; margin: 0 24px 0 240px;}
+
+    .section_magenta .right {height: 270px; height: 270px; padding: 200px 0; box-sizing: border-box; margin: 0 25px 0 100px; display: flex; flex-direction: column; justify-content: center;}
+    .section_magenta h3 {line-height: 84px; font-family: HugeGothic-Bold; font-size: 80px; color: white;}
+    .section_magenta p {line-height: 34px; font-size: 18px; color: white;}
+    

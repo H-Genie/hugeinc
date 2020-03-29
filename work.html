@@ -14,25 +14,14 @@
 
         <link rel="stylesheet" type="text/css" href="css/work.css">
         <link rel="icon" href="img/icon.png" sizes="16x16">
-
-        <script>
-            var header_state = 0; /*변수 선언 : 이름은 내가 짓기 나름*/ 
-
-            function logoClick() {       
-            if (header_state == 0) {
-            document.getElementById("section_header").style="visibility:visible;";
-            header_state = 1;}
-            else {document.getElementById("section_header").style="visibility:hidden;";
-            header_state = 0;} 
-            }
-        </script>
-
+        <script type="text/javascript" src="js/javascript.js"></script>
+        
     </head>
 
     <body>
 
         <!--logo-->
-        <div class="logo_wrap" id="logo" onclick="logoClick()"> <!--함수 이름 지정-->
+        <div class="logo_wrap" onclick="logoClick()">
             <p>H</p>
         </div>
 
@@ -84,18 +73,199 @@
 
 
         <!--video-->
-        <section style="position: relative;">
+        <section class="section_video">
 
-            <video style="width: 100%; height: 100%;" autoplay muted loop>
+            <video autoplay muted loop>
 
-                <source src="https://videos.ctfassets.net/fiz3jwws2um7/3sffxxbEME4CGweoaMUi60/766b61f78a79c828ff9ca1206b242db7/aoy_reel_2017_eod_101717_1.mp4" type="video/mp4">
-                당신의 브라우저는 이 비디오 형식을 지원하지 않습니다.
+                <source src="img/work/work.mp4" type="video/mp4">
+                Your browser does not suppor the video tag.
 
             </video>
 
-            <h2 style="width: 200px; height: 100px; background-color: rgba(234,23,140,0.6); color: white; position: absolute; top: calc(50vh - 50px); left: calc(50vw - 100px);">Hello.</h2>
+            <div class="video_button">
+                <div>▶</div>
+            </div>
 
         </section>
+
+
+
+        <!--photo-->
+        <section class="section_photo">
+
+            <div>
+                <p>Make something you love.</p>
+            </div>
+
+            <div>
+
+               <ul>
+                    <li style="background-image: url(img/work/thumbnail/01.jpg);">
+                        <h2>Scott Sports.</h2>
+                    </li>     
+                    <li style="background-image: url(img/work/thumbnail/02.jpg);">
+                        <h2>Android.</h2>
+                    </li> 
+                    <li style="background-image: url(img/work/thumbnail/03.jpg);">
+                        <h2>AMC Theatres.</h2>
+                    </li>          
+               </ul> 
+
+               <ul>
+                    <li style="background-image: url(img/work/thumbnail/04.jpg);">
+                        <h2>Canada Goose.</h2>
+                    </li>     
+                    <li style="background-image: url(img/work/thumbnail/05.jpg);">
+                        <h2>Google.</h2>
+                    </li> 
+                    <li style="background-image: url(img/work/thumbnail/06.jpg);">
+                        <h2>Gucci.</h2>
+                    </li>          
+                </ul>
+
+                <ul>
+                    <li style="background-image: url(img/work/thumbnail/07.jpg);">
+                        <h2>Hulu.</h2>
+                    </li>     
+                    <li style="background-image: url(img/work/thumbnail/08.jpg);">
+                        <h2>Kohl's.</h2>
+                    </li> 
+                    <li style="background-image: url(img/work/thumbnail/09.jpg);">
+                        <h2>LG.</h2>
+                    </li>          
+                </ul> 
+
+                <ul>
+                    <li style="background-image: url(img/work/thumbnail/10.jpg);">
+                        <h2>Lenovo.</h2>
+                    </li>     
+                    <li style="background-image: url(img/work/thumbnail/11.jpg);">
+                        <h2>NBC Universal.</h2>
+                    </li> 
+                    <li style="background-image: url(img/work/thumbnail/12.jpg);">
+                        <h2>Nike.</h2>
+                    </li>          
+                </ul>
+
+                <ul>
+                    <li style="background-image: url(img/work/thumbnail/13.jpg);">
+                        <h2>Pfizer.</h2>
+                    </li>     
+                    <li style="background-image: url(img/work/thumbnail/14.jpg);">
+                        <h2>Procter & Gamble.</h2>
+                    </li> 
+                    <li style="background-image: url(img/work/thumbnail/15.png);">
+                        <h2>Randstad.</h2>
+                    </li>          
+                </ul>
+
+                <ul>
+                    <li style="background-image: url(img/work/thumbnail/16.jpg);">
+                        <h2>Telus.</h2>
+                    </li>     
+                    <li style="background-image: url(img/work/thumbnail/17.jpg);">
+                        <h2>Zelle.</h2>
+                    </li>                    
+                </ul> 
+                                          
+            </div>
+
+        </section>
+
+        
+
+        <!--client-->
+        <section class="section_client">
+
+            <div>
+
+                <div class="left">
+                    <div></div>
+                    <div>Select clients.</div>
+                </div>
+
+                <div class="right">
+
+                    <ul>
+                        <li><img src="img/work/client/01.png"></li>
+                        <li><img src="img/work/client/02.png"></li>
+                        <li><img src="img/work/client/03.png"></li>
+                        <li><img src="img/work/client/04.png"></li>
+                    </ul>
+
+                    <ul>
+                        <li><img src="img/work/client/05.png"></li>
+                        <li><img src="img/work/client/06.png"></li>
+                        <li><img src="img/work/client/07.png"></li>
+                        <li><img src="img/work/client/08.png"></li>
+                    </ul>
+
+                    <ul>
+                        <li><img src="img/work/client/09.png"></li>
+                        <li><img src="img/work/client/10.png"></li>
+                        <li><img src="img/work/client/11.png"></li>
+                        <li><img src="img/work/client/12.png"></li>
+                    </ul>
+
+                    <ul>
+                        <li><img src="img/work/client/13.png"></li>
+                        <li><img src="img/work/client/14.png"></li>
+                        <li><img src="img/work/client/15.png"></li>
+                        <li><img src="img/work/client/16.png"></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        
+
+        <!--magenta-->
+        <section class="section_magenta" style="background-image: url(img/work/thumbnail/magenta_background.jpg);">
+                      
+            <div class="left">                
+                <img src="img/work/thumbnail/magenta.gif"">
+            </div>
+
+            <div class="right">
+                <h3>I Invented a Smart<br> Tampon Dispenser</h3>
+                <p>Because who wants coin slots, broken knobs, and period shame?</p>
+            </div>
+
+        </section>
+
+
+
+         <!--footer-->
+        <footer class="footer bg_black" id="section_footer">
+
+            <div class="wrap">
+
+                <div class="left">
+                    <div class="font_white">HUGE</div>
+                    <p class="font_white">Make something you love.</p>
+                </div>
+
+                <ul class="right">
+                    <li>
+                        <a href="index.html">Hello</a>
+                        <a href="work.html">Work</a>
+                        <a href="">About</a>
+                        <a href="">Careers</a>
+                        <a href="">Contact</a>                        
+                    </li>
+
+                    <p>© 2020 Huge LLC. Legal. <br>
+                        CCPA Privacy Notice <br>
+                        Modern Slavery Act Statement
+                    </p>
+                </ul>
+
+            </div>
+
+        </footer>
 
 
     <!--body 끝--></body> 

@@ -14,18 +14,7 @@
 
         <link rel="stylesheet" type="text/css" href="css/home.css">
         <link rel="icon" href="img/icon.png" sizes="16x16">
-
-        <script>
-            var header_state = 0; /*변수 선언 : 이름은 내가 짓기 나름*/ 
-
-            function logoClick() {       
-            if (header_state == 0) {
-            document.getElementById("section_header").style="visibility:visible;";
-            header_state = 1;}
-            else {document.getElementById("section_header").style="visibility:hidden;";
-            header_state = 0;} 
-            }
-        </script>
+        <script type="text/javascript" src="js/javascript.js"></script>
 
     </head>
 
@@ -34,7 +23,7 @@
     <body>
 
         <!--logo-->
-        <div class="logo_wrap" id="logo" onclick="logoClick()"> <!--함수 이름 지정-->
+        <div class="logo_wrap" onclick="logoClick()">
             <p>H</p>
         </div>
 
@@ -276,13 +265,13 @@
 
 
          <!--footer-->
-         <footer class="footer bg_black" id="section_footer">
+         <footer class="footer" id="section_footer">
 
             <div class="wrap">
 
                 <div class="left">
-                    <div class="font_white">HUGE</div>
-                    <p class="font_white">Make something you love.</p>
+                    <div>HUGE</div>
+                    <p>Make something you love.</p>
                 </div>
 
                 <ul class="right">
