@@ -1,0 +1,83 @@
+/* CSS - ABOUT v4.5 */
+
+@import url("common.css");
+
+
+/* hero */
+.hero_about {background-image: url(../img/about/hero_about.jpg);}
+
+
+
+/* about_us */
+.about_us {width: 100vw; background-color: white; padding: 140px 0; box-sizing: border-box;}
+.about_us_container {width: 74.68354vw; margin: 0 auto; display: flex;}
+.about_us_content {width: 66.10169%; margin-left: 1.69492%;}
+.about_us_title {margin-bottom: 70px;}
+.about_us_text {padding-bottom: 25px;}
+
+
+/* how we do it */
+.our_service {width: 100vw; background-color: black; padding: 140px 0; box-sizing: border-box;}
+    
+    .our_service_container {width: 74.35897%; margin: 0 auto;}
+
+        .our_service_content_container {width: 100%; display: flex;}    
+            .our_service_content {width: 57.62712%;}
+                .our_service_content_title {margin-bottom: 50px;}
+                .our_service_content_text {column-count: 2;  width: 100%;}
+
+            .our_service_content_infographic {width: 32.20339%; margin-left: 5%;}
+                .our_service_content_infographic img {width: 100%; padding: 2% 0 0 5%;}     
+                
+    .our_service_list_container {width: 74.35897%; margin: 0 auto; display: flex; flex-wrap: wrap; padding-top: 60px;}
+        .our_service_list {width: 32.20339%;}
+        .our_service_list h6 {margin-bottom: 40px;}
+        .our_service_list a:hover {color: #ea178c;}
+        .our_service_list li {margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #222222; margin-right: 15%;}
+        .our_service_list li:nth-last-of-type(1) {border-bottom: none;}
+
+
+/* our culture (made with love) */
+.our_culture {width: 100vw; background-color: #CECDCF; padding: 140px 0; box-sizing: border-box; position: relative;}
+    
+    .our_culture_container {width: 74.35897%; margin: 0 auto;}
+
+    .our_culture_title {margin: 120px 0 100px;}
+    .our_culture_list {width: 100%; display: flex; flex-wrap: wrap; position: relative; z-index: 2;}
+    /* absoulute로 띄운 공간 아래쪽의 빈 공간을 relative로 차지하게 하는 원리 */
+        .our_culture_list li {width: 23.72881%; height: 200px; margin-left: 1.69492%;}
+        .our_culture_list li:nth-child(4n+1) {margin-left: 0;}
+        .our_culture_list a:hover {color: #ea178c;}
+        .our_culture_list h5 {margin-bottom: 7px;}
+        .our_culture_list p {width: 85%;}
+    
+    .our_culture_background {position: absolute; bottom: -10vh; right: 10%; width: 40%;}
+    .our_culture_background img {width: 100%;}
+
+
+/* our office */
+.our_office {width: 100vw; background-color: black;}
+
+    .our_office_container {width: 74.35897%; margin: 0 auto; padding: 140px 0; box-sizing: border-box;}
+    .our_office_list  {display: flex; flex-wrap: wrap; padding-top: 10px; box-sizing: border-box;}
+        .our_office_list li {width: 23.72881%; border-top: 1px solid rgba(255,255,255,0.3); padding-top: 20px; box-sizing: border-box; margin-bottom: 25px; margin-left: 1.69492%;}
+        .our_office_list li a:hover {color:#ea178c}
+        .our_office_list li:nth-child(4n+1) {margin-left: 0;}
+        .our_office_list li p {color: rgba(255,255,255,0.5);}
+
+
+/* our leadership */
+.our_leadership {width: 100vw; background-color: white; padding: 140px 0;}
+
+    .our_leadership_container {width: 74.35897%; margin: 0 auto;}
+    .our_leadership_list {width: 100%; padding-top: 25px; box-sizing: border-box; display: flex; flex-wrap: wrap}
+
+        .our_leadership_list li {padding-top: 40px; box-sizing: border-box; margin-bottom: 40px; width: 32.203386%; margin-left: 1.69492%; border-top: 1px solid rgba(0,0,0,0.3);}
+        .our_leadership_list li:nth-child(3n+1) {margin-left: 0;}
+        .our_leadership_list li:nth-child(-n+3) {border-top: none;}
+        .our_leadership_list li a:hover {color: #ea178c;}
+        .our_leadership_list li p {color: rgba(0,0,0,0.5);}
+
+
+/* magenta */
+.about_magenta_bg {background-image: url(../img/about/magenta_background.png);}

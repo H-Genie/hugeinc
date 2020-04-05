@@ -1,4 +1,4 @@
-/* HOME v4.3 */
+/* HOME v4.3 (최종) */
 @import url("common.css");
 
     
@@ -40,10 +40,3 @@
 .bg_img_section_05 {background-image: url(../img/home/hugeinc05.jpg); background-size: cover; background-repeat: no-repeat;}
 .bg_img_section_06 {background-image: url(../img/home/hugeinc06.jpg); background-size: cover; background-repeat: no-repeat;}
 .bg_img_section_07 {background-image: url(../img/home/hugeinc07.jpg); background-size: cover; background-repeat: no-repeat;}
-
-
-
-/* color */
-.border_bottom_black {border-bottom: 1px solid black;}
-.border_bottom_white {border-bottom: 1px solid white;}
-.font_white {color: white;}
