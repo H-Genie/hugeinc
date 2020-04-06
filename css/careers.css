@@ -9,6 +9,7 @@
         .careers_02 .container h3 {font-family: Galaxie-Book; margin-bottom: 20px;}
         .careers_02 .container p {margin-bottom: 60px;}
         .careers_02 .container a {color: white; padding: 30px 45px; box-sizing: border-box; background-color: black; display: inline-block; cursor: pointer;}
+        .careers_02 .container a:hover {opacity: 0.5;}
 
 
 /* section_03 */
