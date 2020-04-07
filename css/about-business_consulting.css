@@ -14,5 +14,19 @@
 .section_01 .breadcrumb hr {width: 31.03448%; margin: 7px 15px;}
 
 
+/* section_01 */
+.section_02 {width: 100vw; background-color: white;}
+.section_02 .container {width: 74.68354%; padding: 140px 0; margin: 0 auto; display: flex;}
+
+.section_02 .subtitle {width: 32.20339%;}
+.section_02 .subtitle hr {width: 47.36842%; margin-bottom: 20px;}
+
+
+.section_02 .content {width: 66.10169%; margin-left: 1.69492%;}
+.section_02 .content p:nth-of-type(1) {}
+.section_02 .content p:nth-of-type(2)
+.section_02 .content p:nth-of-type(3)
+
+
 
 
