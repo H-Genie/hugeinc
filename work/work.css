@@ -1,0 +1,58 @@
+/* CSS - WORK v4.4 */
+
+@import url("../source/common.css");
+
+
+
+/* thumbnail */
+.work_02 {width: 100vw; height: 210px; display: flex; justify-content: center; align-items: center; background-color: black; color: white; font-size: 56px; font-family: Galaxie-Book;}
+
+.work_03 {background-color: black; width: 100vw; padding-bottom: 95px; box-sizing: border-box;}
+    .work_03_ul {display: flex; width: 90vw; margin: 0 auto; flex-wrap: wrap;}
+    .work_03_ul li {width: 30vw; height: 30vw; background-size: cover;}
+    .work_03_ul a {width: 30vw; height: 30vw; box-sizing: border-box; display: block; padding-left: 40px; padding-top: calc(30vw - 64px); color: white; overflow: hidden; transition: background-color 0.2s, padding-top 0.2s;}
+    .work_03_ul a:hover {background-color: rgba(0,0,0,0.5); padding-top: calc(30vw - 124px);}
+    .work_03_ul h4:nth-of-type(2) {margin-top: 12px;}
+    
+    
+    
+    .work_03_ul li:nth-child(1) {background-image: url(img/thumbnail/01.jpg);}
+    .work_03_ul li:nth-child(2) {background-image: url(img/thumbnail/02.jpg);}
+    .work_03_ul li:nth-child(3) {background-image: url(img/thumbnail/03.jpg);}
+    
+    .work_03_ul li:nth-child(4) {background-image: url(img/thumbnail/04.jpg);}
+    .work_03_ul li:nth-child(5) {background-image: url(img/thumbnail/05.jpg);}
+    .work_03_ul li:nth-child(6) {background-image: url(img/thumbnail/06.jpg);}
+    
+    .work_03_ul li:nth-child(7) {background-image: url(img/thumbnail/07.jpg);}
+    .work_03_ul li:nth-child(8) {background-image: url(img/thumbnail/08.jpg);}
+    .work_03_ul li:nth-child(9) {background-image: url(img/thumbnail/09.jpg);}
+    
+    .work_03_ul li:nth-child(10) {background-image: url(img/thumbnail/10.jpg);}
+    .work_03_ul li:nth-child(11) {background-image: url(img/thumbnail/11.jpg);}
+    .work_03_ul li:nth-child(12) {background-image: url(img/thumbnail/12.jpg);}
+    
+    .work_03_ul li:nth-child(13) {background-image: url(img/thumbnail/13.jpg);}
+    .work_03_ul li:nth-child(14) {background-image: url(img/thumbnail/14.jpg);}
+    .work_03_ul li:nth-child(15) {background-image: url(img/thumbnail/15.png);}
+    
+    .work_03_ul li:nth-child(16) {background-image: url(img/thumbnail/16.jpg);}
+    .work_03_ul li:nth-child(17) {background-image: url(img/thumbnail/17.jpg);}
+
+
+/* client */
+.work_04 {background-color: #111111; width: 100vw; padding: 140px 0; box-sizing: border-box;}
+.work_04_wrap {width: 74.68354%; display: flex; justify-content: space-between; margin: auto;}
+
+    .work_04_wrap .left {width: 32.20339%;}
+    .work_04_wrap .left hr {width: 47.36842%; height: 1px; color: white;}
+    .work_04_wrap .left h4 {font-family: HugeGothic-Bold; font-size: 22px; color: white; line-height: 60px;}
+
+    .work_04_wrap .right {display: flex; justify-content: flex-start; width: 66.10169%; flex-wrap: wrap;}
+    .work_04_wrap .right li {width: 15.3846%; margin-right: 10.25641%; margin-bottom: 50px; box-sizing: border-box;}
+    .work_04_wrap .right li img {width: 100%;}
+    .work_04_wrap .right li:nth-child(4n) {margin-right: 0;}
+
+
+/* client */
+.work_magenta_bg {background-image: url(img/thumbnail/magenta_background.jpg);}
