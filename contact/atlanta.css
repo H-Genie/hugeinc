@@ -1,0 +1,61 @@
+/* CSS - contact-atlanta v4.5 */
+
+@import url("../source/common.css");
+
+
+/* hero */
+.hero_contact_atlanta {width: 100vw; height: 80vh; background-size: cover; box-sizing: border-box;}
+.hero_contact_atlanta_bg {background-image: url(img/atlanta/hero_contact_atlanta.gif);}
+.hero_contact_atlanta_opacity {background-color: rgba(0,0,0,0.15); width: 100%; height: 100%; display: flex; align-items: flex-end;}
+
+.hero_contact_atlanta .breadcrumb {width: 36.70886%; position: absolute; left: 12.65823%; top: 50px; display: flex; align-items: center; }
+.hero_contact_atlanta .breadcrumb a:hover {color: #ea178c;}
+.hero_contact_atlanta .breadcrumb .rule {width: 31.03448%; height: 1px; margin: 0 22px; border-top: 2px solid white;}
+
+.hero_contact_atlanta .container {width: 74.68354%; margin: 0 auto; padding-bottom: 72px; position: relative;}
+
+.hero_contact_atlanta .content h1 {margin-bottom: 4px;}
+.hero_contact_atlanta .content >div {display: flex;}
+.hero_contact_atlanta .content >div p {margin-right: 50px;}
+
+
+/* section_02 */
+.section_02 {width: 100vw; background-color: white;}
+
+.section_02 .container {width: 74.68354%; margin: 0 auto; display: flex; padding: 140px 0;}
+.section_02 .container .content {width: 66.10169%; margin-left: 1.69492%;}
+.section_02 .container .content span {text-decoration: underline;}
+.section_02 .container .content a {cursor: pointer;}
+
+
+/* section_02_gallery */
+.section_02 .gallery {width: 87.34177%; margin: 0 auto; display: flex; justify-content: space-between ; flex-wrap: wrap;}
+
+.section_02 .gallery li:nth-of-type(1) {width: 100%; height: auto; margin-bottom: 1.26582vw;}
+
+.section_02 .gallery li:nth-of-type(2) {display: flex; justify-content: space-between; margin-bottom: 1.26582vw; height: 50vw; overflow: hidden;}
+    .section_02 .gallery li:nth-of-type(2) >div:nth-of-type(1) {width: 49.36709%;}
+    .section_02 .gallery li:nth-of-type(2) >div:nth-of-type(2) {width: 49.36709%; flex-direction: column;}
+
+.section_02 .gallery li:nth-of-type(3) {width: 100%; display: flex; justify-content: space-between; margin-bottom: 1.26582vw;}
+    .section_02 .gallery li:nth-of-type(3) >div:nth-of-type(1) {width: 36.70886%;}
+    .section_02 .gallery li:nth-of-type(3) >div:nth-of-type(2) {width: 62.02532%;}
+
+.section_02 .gallery li:nth-of-type(4) {width: 100%; display: flex; justify-content: space-between;}
+.section_02 .gallery li:nth-of-type(4) >div:nth-of-type(1) {width: 49.36709%;}
+.section_02 .gallery li:nth-of-type(4) >div:nth-of-type(2) {width: 49.36709%;}
+
+
+.section_02 .gallery img {width: 100%;}
+    .section_02 .gallery img:nth-of-type(3) {margin-bottom: 1.26582vw;}
+    
+    
+    
+    
+    
+/* section_02_call_to_action */
+.call_to_action {width: 74.68354%; margin: 0 auto; padding: 200px 0;}
+.call_to_action h3 {margin-bottom: 20px;}
+.call_to_action p {margin-bottom: 60px;}
+.call_to_action a {background-color: black; padding: 30px 45px; display: inline-block;}
+.call_to_action a:hover {opacity: 0.5; cursor: pointer;}

@@ -1,0 +1,25 @@
+@font-face {font-family: HugeGothic-Bold; src: url(HugeGothic-Bold.woff)}
+@font-face {font-family: Galaxie-Book; src: url(GalaxieCopernicus-Book.woff)}
+
+h1, h2, h3, h4, h5, h6 {font-family: HugeGothic-Bold; font-weight: 400; -webkit-font-smoothing: antialiased;}
+p {font-family: Galaxie-book; font-weight: 400; -webkit-font-smoothing: antialiased;}
+
+h1 {font-size: 170px; line-height: 170px;}
+h2 {font-size: 80px; line-height: 84px; letter-spacing: -2px;}
+h3 {font-size: 56px; line-height: 70px; letter-spacing: -4px;}
+h4 {font-size: 44px; line-height: 44px;}
+h5 {font-size: 24px; line-height: 30px;}
+h6 {font-size: 22px; line-height: 26px;}
+p {font-size: 18px; line-height: 34px; letter-spacing: -0.27504px;}
+
+.h2_sans_serif {font-family: HugeGothic-Bold; font-size: 90px; line-height: 93px; letter-spacing: -3.62992px;}
+.h3_serif {font-family: Galaxie-Book; font-size: 56px; line-height: 70px; letter-spacing: -4px;}
+.h3_sans_serif {font-family: HugeGothic-Bold; font-size: 57px; line-height: 57px; letter-spacing: normal;}
+.h4_sans {font-size: 44px; line-height: 44px;}
+.h5_serif {font-family: Galaxie-Book; font-size: 28px; line-height: 39px; letter-spacing: -0.27504px;}
+.h5_sans {font-size: 24px; line-height: 30px;}
+.h6_sans {font-size: 22px; line-height: 16px; letter-spacing: normal;}
+
+.p_small_1 {font-size: 16px; letter-spacing: -1px;}
+.p_small_2 {font-size: 12px; line-height: 22.6667px; letter-spacing: -0.27504px;}
+.p_small_sans {font-size: 14px; line-height: 20px;}
