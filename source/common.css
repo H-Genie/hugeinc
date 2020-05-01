@@ -5,15 +5,25 @@
 
 
 /* logo */
-.logo_wrap {width: 74px; height: 74px; background-color: white; display: flex; justify-content: center; align-items: center; position: fixed; top: 50px; left: calc(50vw - 37px); z-index: 200;}
-    .logo_wrap p {width: 48px; height: 48px; font-family: HugeGothic-Bold; background-color: white; font-size: 36px; color: #EA178C; display: flex; justify-content: center; align-items: center;}
+.logo_wrap {width: 74px; height: 74px; background-color: white; display: flex; justify-content: center; align-items: center; position: fixed; top: 50px; left: calc(50% - 37px); z-index: 200;  padding-top: 2px; box-sizing: border-box; font-family: HugeGothic-Bold; font-size: 36px; color: #ea178c;
+
+background: linear-gradient(315deg, #ffffff,#ffffff, #ea178c, #ffffff, #ea178c, #ffffff, #ffffff, #ffffff);
+background-size: 800% 800%;
+
+animation: AnimationName 1s linear 1;}
+
+@keyframes AnimationName {
+    0%{background-position:0% 10%;}
+    100%{background-position:100% 90%;}    
+}
+
+    .logo_wrap p {width: 48px; height: 48px;  background-color: white;  color: #EA178C; display: flex; justify-content: center; align-items: center;}
     
 
-
 /* header */
-header {width: 100vw; height: 0px; display: block; background-color: #f4f4f4; position: fixed; transition: height 0.7s; z-index: 100; overflow: hidden;}
+header {width: 100%; height: 0px; display: block; background-color: #f4f4f4; position: fixed; transition: height 0.7s; z-index: 100; overflow: hidden;}
 
-nav {width: 100vw; height: 440px; display: flex; justify-content: center; align-items: center; box-sizing: border-box; position: relative;}
+nav {width: 100%; height: 440px; display: flex; justify-content: center; align-items: center; box-sizing: border-box; position: relative;}
 
 .menu_wrap {width: 1050px; height: 90px; display: flex; justify-content: space-between; align-items: center;}
     .menu_wrap li {width: 190px; margin: 0 10px; display: flex; flex-direction: column; align-items: center;}

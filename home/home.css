@@ -3,15 +3,27 @@
 
     
 /* home */
-.home_wrap {width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; position: relative;}
+.home_wrap {width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center; position: relative;
+    background: linear-gradient(315deg, #ffffff,#ffffff, #ea178c, #ffffff, #ffffff);
+    background-size: 400% 400%;
+    
+    animation: home_background_animation 1s linear 1;   
+}
 
-    .home_wrap h1 {font-size: 300px;}
+@keyframes home_background_animation {
+    0%{background-position:0% 10%}
+    100%{background-position:100% 90%}    
+}
+    .home_wrap h1 {font-size: 300px; line-height: 300px; padding: 50px 0 0 25px; box-sizing: border-box;}
+    .title_hello {display: block;}
+    .title_hi {display: none;}
     
     .home_wrap .bottom {width: 100vw; height: 90px; display: flex; flex-direction: column;justify-content: center; align-items: center;  position: absolute; bottom: 0;}
         .home_wrap .bottom p {line-height: 60px;}
         .home_wrap .bottom div {height: 30px; border-left: 1px solid black;}
 
      
+main {width: 100%; transition: padding 0.75s;}
         
 /* section */
 .section {width: 100vw; height: 100vh; display: flex;}
