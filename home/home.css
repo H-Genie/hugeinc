@@ -18,29 +18,27 @@
     .title_hello {display: block;}
     .title_hi {display: none;}
     
-    .home_wrap .bottom {width: 100vw; height: 90px; display: flex; flex-direction: column;justify-content: center; align-items: center;  position: absolute; bottom: 0;}
+    .home_wrap .bottom {width: 100%; height: 90px; display: flex; flex-direction: column;justify-content: center; align-items: center;  position: absolute; bottom: 0;}
         .home_wrap .bottom p {line-height: 60px;}
         .home_wrap .bottom div {height: 30px; border-left: 1px solid black;}
 
-     
-main {width: 100%; transition: padding 0.75s;}
-        
+             
 /* section */
-.section {width: 100vw; height: 100vh; display: flex;}
+.section {width: 100%; height: 100vh; display: flex;}
     
-    .section .index {width: 12.5vw; height: 100vh; padding-top: 20vh; box-sizing: border-box;}
+    .section .index {width: 12.5%; height: 100vh; padding-top: 20vh; box-sizing: border-box;}
         .section .index .wrap {display: flex; justify-content: flex-end;}
             .section .index p {line-height: 22px; font-family: HugeGothic-Bold; font-size: 22px; letter-spacing: 1px; margin-right: 15px;}
-            .section .index .wrap div {width: 5vw; height: 11px;}
+            .section .index .wrap div {min-width: 40%; height: 11px;}
 
-    .section .content {width: 75vw; height: 100vh; padding: 20vh 0; padding-left: 15px; box-sizing: border-box;}
+    .section .content {width: 75%; height: 100vh; padding: 20vh 0; padding-left: 15px; box-sizing: border-box;} /*1920 * 0.75 = 1440*/
         .section .content > p {line-height: 22px; font-family: HugeGothic-Bold; font-size: 22px; letter-spacing: 1px;}
-        .section .content .subwrap {width: 45%; height: 60vh; display: flex; flex-direction: column; justify-content: center;}
+        .section .content .subwrap {width: 45%; height: 60vh; display: flex; flex-direction: column; justify-content: center;} /* 1440 * 0.45 = 648px */
             .section .content .subwrap h2 {font-size: 72px;}
-            .section .content .subwrap div {width: 5vw; margin: 30px 0;}
+            .section .content .subwrap div {width: 14.81418%; margin: 30px 0;} /* 5vw = 96px */
             .section .content .subwrap p {width: 85%; line-height: 28px; font-size: 18px;}
 
-    .section .detail {width: 12.5vw; height: 100vh;}
+    .section .detail {width: 12.5%; height: 100vh;}
 
 
 

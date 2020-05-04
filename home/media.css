@@ -1,3 +1,28 @@
-@media screen and (max-width:480px) {
-    .section {width: 87.34177%;}
+@media screen and (max-width:768px) {
+    /* section */
+    .section {padding: 0 6.329115%; position: relative;}
+    .section .index {padding: 15vh 0 5vh;}
+    .section .index .wrap {justify-content: flex-start;}
+    .section .index p {font-size: 16px; line-height: 24px;}
+    
+    .section .content {padding: 15vh 0 5vh;}
+    .section .content > p {font-size: 16px ;line-height: 24px;}
+    .section .content .subwrap {width: 100%; height: auto; position: absolute; left: 6.329115%; margin-top: 30px;}
+    .section .content .subwrap h2 {font-size: 40px; line-height: 44px;}
+    .section .content .subwrap p {font-size: 18px; line-height: 34px;}
+
+    /* background_image */
+    .bg_img_section_01 {background-image: url(img/hugeinc01m.jpg); background-position-x: 50%; background-position-y: 50%;}
+    .bg_img_section_02 {background-image: url(img/hugeinc02m.png); background-position-x: 50%; background-position-y: 50%;}
+    .bg_img_section_03 {background-image: url(img/hugeinc03m.jpg); background-position-x: 50%; background-position-y: 50%;}
+    .bg_img_section_04 {background-image: url(img/hugeinc04m.png); background-position-x: 50%; background-position-y: 50%;}
+    .bg_img_section_05 {background-image: url(img/hugeinc05m.jpg); background-position-x: 50%; background-position-y: 50%;}
+    .bg_img_section_06 {background-image: url(img/hugeinc06m.jpg); background-position-x: 50%; background-position-y: 50%;}
+    .bg_img_section_07 {background-image: url(img/hugeinc07m.jpg); background-position-x: 50%; background-position-y: 50%;}
+}
+
+@media screen and (max-width:999px) {
+    .footer .wrap {display: block;}
+    .footer .wrap .left {margin-bottom: 20px;}
+    .footer .wrap .right p {text-align: left;}
 }

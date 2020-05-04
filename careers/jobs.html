@@ -15,15 +15,35 @@
 
         <link rel="stylesheet" type="text/css" href="jobs.css">
         <link rel="icon" href="../source/icon.png" sizes="16x16">
-        <script type="text/javascript" src="../source/javascript.js"></script>
+        
+        <script>
+            var header_state=0;
+
+            function logoClick () {
+                if (header_state==0) {
+                    document.getElementById("section_header").style="height:440px;";
+                    document.getElementById("main_extend").style="padding-top:440px";        
+                    document.getElementById("logo_wrap").firstElementChild.src="../home/img/huge.svg";
+                    document.getElementById("logo_wrap").firstElementChild.style="width:60px";
+                    header_state=1;
+                }
+                else {
+                    document.getElementById("section_header").style="height:0px;";
+                    document.getElementById("main_extend").style="padding-top:0px";        
+                    document.getElementById("logo_wrap").firstElementChild.src="../home/img/h.svg";
+                    document.getElementById("logo_wrap").firstElementChild.style="width:20px";
+                    header_state=0;
+                }
+            } 
+        </script>
         
     </head>
 
     <body>
 
         <!--logo-->
-        <div class="logo_wrap" onclick="logoClick()">
-            <p>H</p>
+        <div id="logo_wrap" onclick="logoClick()">
+            <img src="../home/img/h.svg">
         </div>
 
 
@@ -73,7 +93,7 @@
 
 
 
-        <main>
+        <main id="main_extend">
 
             <!--section_01-->
             
