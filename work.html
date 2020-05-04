@@ -22,8 +22,8 @@
     <body>
 
         <!--logo-->
-        <div class="logo_wrap" onclick="logoClick()">
-            <p>H</p>
+        <div id="logo_wrap" onclick="logoClick()">
+            <img src="home/img/h.svg">
         </div>
 
 
@@ -72,20 +72,28 @@
         </header>
 
 
+        <main id="main_extend">
 
         <!--video-->
         <section class="hero_video">
 
-            <video autoplay muted loop>
+            <video autoplay muted loop id="play_video">
 
                 <source src="work/img/work.mp4" type="video/mp4">
                 Your browser does not suppor the video tag.
 
             </video>
 
-            <div class="video_button">
+            <div class="video_button" onclick="openFullScreen()">
                 <div><img src="work/img/button.svg"></div>
             </div>
+
+            <script>
+                var play=document.getElementById("play_video");
+                function openFullScreen() {
+                    play.requestFullscreen();
+                }                
+            </script>
 
         </section>
 
@@ -280,6 +288,7 @@
             </div>
             
         </div>
+        </main>
 
 
          <!--footer-->
