@@ -20,6 +20,8 @@ p {font-size: 18px; line-height: 34px; letter-spacing: -0.27504px;}
 .h5_sans {font-size: 24px; line-height: 30px;}
 .h6_sans {font-size: 22px; line-height: 16px; letter-spacing: normal;}
 
+.p_menu_title {font-family: HugeGothic-Bold; font-size: 20px; line-height: 24px;}
+.p_menu_describe {font-family: Galaxie-Book; font-size: 17px; line-height: 25.5px; letter-spacing: -0.65008px;}
 .p_small_1 {font-size: 16px; letter-spacing: -1px;}
 .p_small_2 {font-size: 12px; line-height: 22.6667px; letter-spacing: -0.27504px;}
 .p_small_sans {font-size: 14px; line-height: 20px;}
