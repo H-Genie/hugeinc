@@ -15,7 +15,7 @@
     100%{background-position:100% 90%}    
 }
 
-    .home_wrap h1 {font-size: 300px; line-height: 300px; padding: 75px 0 0 8px; box-sizing: border-box;}
+    .home_wrap h1 {font-size: 300px; line-height: 300px; padding: 75px 0 0 0px; box-sizing: border-box;}
     .title_hello {display: block;}
     .title_hi {display: none;}
     
@@ -35,7 +35,7 @@
     .section .content {width: 75%; height: 100vh; padding: 20vh 0; padding-left: 15px; box-sizing: border-box;} /*1920 * 0.75 = 1440*/
         .section .content > p {line-height: 22px; font-family: HugeGothic-Bold; font-size: 22px; letter-spacing: 1px;}
         .section .content .subwrap {width: 45%; height: 60vh; display: flex; flex-direction: column; justify-content: center;} /* 1440 * 0.45 = 648px */
-            .section .content .subwrap h2 {font-size: 72px;}
+            .section .content .subwrap h2 {font-size: 80px;}
             .section .content .subwrap div {width: 14.81418%; margin: 30px 0;} /* 5vw = 96px */
             .section .content .subwrap p {width: 85%; line-height: 28px; font-size: 18px;}
 
@@ -44,10 +44,10 @@
 
 
 /* background_image */
-.bg_img_section_01 {background-image: url(img/hugeinc01.png); background-size: cover; background-repeat: no-repeat;}
-.bg_img_section_02 {background-image: url(img/hugeinc02.png); background-size: cover; background-repeat: no-repeat;}
-.bg_img_section_03 {background-image: url(img/hugeinc03.png); background-size: cover; background-repeat: no-repeat;}
-.bg_img_section_04 {background-image: url(img/hugeinc04.png); background-size: cover; background-repeat: no-repeat;}
-.bg_img_section_05 {background-image: url(img/hugeinc05.jpg); background-size: cover; background-repeat: no-repeat;}
+.bg_img_section_01 {background-image: url(img/hugeinc01.png); background-size: cover; background-repeat: no-repeat; background-position: center;}
+.bg_img_section_02 {background-image: url(img/hugeinc02.png); background-size: cover; background-repeat: no-repeat; background-position: center;}
+.bg_img_section_03 {background-image: url(img/hugeinc03.png); background-size: cover; background-repeat: no-repeat; background-position: center;}
+.bg_img_section_04 {background-image: url(img/hugeinc04.png); background-size: cover; background-repeat: no-repeat; background-position: center;}
+.bg_img_section_05 {background-image: url(img/hugeinc05.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;}
 .bg_img_section_06 {background-image: url(img/hugeinc06.jpg); background-size: cover; background-repeat: no-repeat;}
-.bg_img_section_07 {background-image: url(img/hugeinc07.jpg); background-size: cover; background-repeat: no-repeat;}
+.bg_img_section_07 {background-image: url(img/hugeinc07.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;}

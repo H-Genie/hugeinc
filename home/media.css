@@ -1,11 +1,46 @@
-@media screen and (max-width:768px) {
+@media screen and (max-height:660px) {
+    .section .content .subwrap {height: auto;}
+    .menu_wrap_hidden li {margin: 2.5vh 0;}
+    .gnb_aside {top: 320px !important;}
+}
+
+@media screen and (max-width:400px) {
+    .footer .wrap {width: 85% !important;}
+    .footer .wrap .right a {font-size: 10px;}
+}
+
+@media screen and (max-width:550px) {
+    .footer .wrap {width: 80%;}
+}
+
+@media screen and (max-width:900px) {
+    .home_wrap h1 {font-size: 240px;}
+}
+
+@media screen and (max-width:999px) {
+    .section .index p {font-size: 16px;}    
+    .section .content .subwrap h2 {font-size: 72px;}
+    .section .content > p {font-size: 16px;}
+
+    .footer .wrap {display: block; padding: 50px 0;}
+    .footer .wrap .left {margin-bottom: 20px; align-items: center;}
+    .footer .wrap .left div {height: auto; font-size: 24px; padding-right: 20px; margin-right: 20px;}
+    .footer .wrap .left p {font-family: HugeGothic-Bold; font-size: 14px; line-height: 20px;}
+
+    .footer .wrap .right p {text-align: left;}
+}
+
+@media screen and (max-width:767px) {
     /* logo */
     #logo_wrap {top: 27px; left: calc(50% - 30px); width: 60px; height: 60px;}
+    #logo_wrap2 {top: 27px; left: calc(50% - 30px); width: 60px; height: 60px;}
     
-    /* header */
+    /* header */    
+    nav {height: 80vh; align-items: initial;}
     .menu_wrap {display: none;}
-    .menu_wrap_hidden {display: block;}
-    .gnb_aside {top: 360px;}
+    .menu_wrap_hidden {display: block; padding-top: 90px;}
+    .home_wrap h1 {font-size: 200px; padding: 75px 0 0 10px;}
+    .gnb_aside {top: 500px;}
 
     /* home */
     .title_hello {display: none;}
@@ -15,7 +50,8 @@
     .section {padding-left:6.329115%; position: relative;}
     .section .index {padding: 15vh 0 5vh;}
     .section .index .wrap {justify-content: flex-start;}
-    .section .index p {font-size: 16px; line-height: 24px; margin-right: 20%;}
+    .section .index .wrap div {width: auto; flex-grow: 1;}
+    .section .index p {font-size: 16px; line-height: 24px; margin-right: 10%;}
 
     .section .content {padding: 15vh 0 5vh; padding-left: 2.5%;}
     .section .content > p {font-size: 16px ;line-height: 24px;}
@@ -26,18 +62,10 @@
     /* background_image */
     .bg_img_section_01 {background-image: url(img/hugeinc01m.jpg); background-position-x: 50%; background-position-y: 50%;}
     .bg_img_section_02 {background-image: url(img/hugeinc02m.png); background-position-x: 50%; background-position-y: 50%;}
-    .bg_img_section_03 {background-image: url(img/hugeinc03m.jpg); background-position-x: 50%; background-position-y: 50%;}
+    .bg_img_section_03 {background-image: url(img/hugeinc03_resize.png); background-position-x: 50%; background-position-y: 50%;}
     .bg_img_section_04 {background-image: url(img/hugeinc04m.png); background-position-x: 50%; background-position-y: 50%;}
     .bg_img_section_05 {background-image: url(img/hugeinc05m.jpg); background-position-x: 50%; background-position-y: 50%;}
     .bg_img_section_06 {background-image: url(img/hugeinc06m.jpg); background-position-x: 50%; background-position-y: 50%;}
     .bg_img_section_07 {background-image: url(img/hugeinc07m.jpg); background-position-x: 50%; background-position-y: 50%;}
 }
 
-@media screen and (max-width:999px) {
-    .footer .wrap {display: block; padding: 50px 0;}
-    .footer .wrap .left {margin-bottom: 20px; align-items: center;}
-    .footer .wrap .left div {height: auto; font-size: 24px; padding-right: 20px; margin-right: 20px;}
-    .footer .wrap .left p {font-family: HugeGothic-Bold; font-size: 20px; line-height: 20px;}
-
-    .footer .wrap .right p {text-align: left;}
-}
