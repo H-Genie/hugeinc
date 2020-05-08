@@ -4,10 +4,10 @@
     
 /* home */
 .home_wrap {width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center; position: relative;
-    background: linear-gradient(315deg, #ffffff,#ffffff, #ea178c, #ffffff, #ffffff);
+    background: linear-gradient(315deg, #ffffff,#ffffff, rgba(234,23,140,0.3), #ffffff, #ffffff);
     background-size: 400% 400%;
     
-    animation: home_background_animation 1s linear 1;   
+    animation: home_background_animation 0.7s linear 1;   
 }
 
 @keyframes home_background_animation {
@@ -35,7 +35,7 @@
     .section .content {width: 75%; height: 100vh; padding: 20vh 0; padding-left: 15px; box-sizing: border-box;} /*1920 * 0.75 = 1440*/
         .section .content > p {line-height: 22px; font-family: HugeGothic-Bold; font-size: 22px; letter-spacing: 1px;}
         .section .content .subwrap {width: 45%; height: 60vh; display: flex; flex-direction: column; justify-content: center;} /* 1440 * 0.45 = 648px */
-            .section .content .subwrap h2 {font-size: 80px;}
+            .section .content .subwrap h2 {font-size: 80px; letter-spacing: 0.5px;}
             .section .content .subwrap div {width: 14.81418%; margin: 30px 0;} /* 5vw = 96px */
             .section .content .subwrap p {width: 85%; line-height: 28px; font-size: 18px;}
 

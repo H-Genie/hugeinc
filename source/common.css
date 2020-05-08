@@ -9,7 +9,7 @@
 
     background: linear-gradient(315deg, #ffffff,#ffffff, #ea178c, #ffffff, #ea178c, #ffffff, #ffffff, #ffffff);
     background-size: 800% 800%;
-    animation: AnimationName 1s linear 1;
+    animation: AnimationName 0.7s linear 1;
 }
 
 @keyframes AnimationName {
@@ -36,11 +36,11 @@ main {width: 100%; transition: padding 0.75s;}
 
 nav {width: 100%; height: 440px; display: flex; justify-content: center; align-items: center; box-sizing: border-box; position: relative;}
 
-.menu_wrap {max-width: 90%; display: flex; justify-content: space-between; align-items: center; padding-top: 26px; margin: 0 auto;}
+.menu_wrap {max-width: 95%; display: flex; justify-content: space-between; align-items: center; padding-top: 26px; margin: 0 auto;}
     .menu_wrap li {max-width: 18.095238%; display: flex; flex-direction: column; align-items: center; margin-right: 10px;}
     .menu_wrap li a {line-height: 32px; width: 190px; font-family: HugeGothic-Bold; font-size: 32px; text-align: center;}
     .menu_wrap li a:hover {color: #ea178c; cursor: pointer;}
-    .menu_wrap li p {font-size: 14px; text-align: center; letter-spacing: -1px; padding-top: 4px; box-sizing: border-box;}
+    .menu_wrap li p {font-size: 14px; text-align: center; letter-spacing: -1px; padding-top: 4px; box-sizing: border-box; line-height: 20px;}
     .menu_wrap li div {width: 48px; border-bottom: 1px solid black; margin: 35px auto;}
 
 .menu_wrap_hidden {display: none; width: 100%; padding: 0 10%;}
@@ -51,7 +51,7 @@ nav {width: 100%; height: 440px; display: flex; justify-content: center; align-i
 
 .gnb_aside {width: 300px; height: 22px; display: flex; justify-content: center; position: absolute; top: 341.5px; left: calc(50% - 150px);}
     .gnb_aside p {font-size: 14px; letter-spacing: -1px; line-height: 20px;}
-    .gnb_aside a {font-family: HugeGothic-Bold; font-size: 16px; margin-left: 6px;}
+    .gnb_aside a {font-family: HugeGothic-Bold; font-size: 16px; margin-left: 6px; line-height: 20px;}
     .gnb_aside a:hover {color: #ea178c; cursor: pointer;}
     .gnb_aside span {color: #ea178c;}
 
@@ -76,8 +76,8 @@ nav {width: 100%; height: 440px; display: flex; justify-content: center; align-i
 .footer .wrap {width: 75%; padding: 70px 15px 87px; box-sizing: border-box; display: flex; justify-content: space-between;}
 
     .footer .wrap .left {display: flex; padding-top: 5px; box-sizing: border-box;}
-        .footer .wrap .left div {height: 36px; font-family: HugeGothic-Bold; font-size: 32px; letter-spacing: 2px; padding-right: 26px; box-sizing: border-box; border-right: 1px solid #888888; margin-right: 26px; color: white;}
-        .footer .wrap .left p {line-height: 36px; font-size: 16px; letter-spacing: 1px; color: white;}
+        .footer .wrap .left div {height: 36px; font-family: HugeGothic-Bold; font-size: 32px; letter-spacing: 1px; padding-right: 26px; box-sizing: border-box; border-right: 1px solid #888888; margin-right: 26px; color: white;}
+        .footer .wrap .left p {line-height: 36px; font-size: 16px; letter-spacing: 1.5px; color: white;}
 
     
         .footer .wrap .right a {line-height: 24px; font-family: HugeGothic-Bold; font-size: 14px; color: #c8c8c8; letter-spacing: 1px; margin-right: 16px;}

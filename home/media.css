@@ -22,10 +22,11 @@
     .section .content .subwrap h2 {font-size: 72px;}
     .section .content > p {font-size: 16px;}
 
-    .footer .wrap {display: block; padding: 50px 0;}
+    footer {height: 366px !important;}
+    .footer .wrap {display: block; padding: 120px 0;}
     .footer .wrap .left {margin-bottom: 20px; align-items: center;}
     .footer .wrap .left div {height: auto; font-size: 24px; padding-right: 20px; margin-right: 20px;}
-    .footer .wrap .left p {font-family: HugeGothic-Bold; font-size: 14px; line-height: 20px;}
+    .footer .wrap .left p {font-size: 14px; line-height: 20px;}
 
     .footer .wrap .right p {text-align: left;}
 }
@@ -56,7 +57,7 @@
     .section .content {padding: 15vh 0 5vh; padding-left: 2.5%;}
     .section .content > p {font-size: 16px ;line-height: 24px;}
     .section .content .subwrap {width: 75%; height: auto; position: absolute; left: 6.329115%;  margin-top: 30px;}
-    .section .content .subwrap h2 {font-size: 40px; line-height: 44px;}
+    .section .content .subwrap h2 {font-size: 40px; line-height: 44px; letter-spacing: 1px;}
     .section .content .subwrap p {width: 100%; font-size: 18px; line-height: 34px;}
 
     /* background_image */
@@ -64,7 +65,7 @@
     .bg_img_section_02 {background-image: url(img/hugeinc02m.png); background-position-x: 50%; background-position-y: 50%;}
     .bg_img_section_03 {background-image: url(img/hugeinc03_resize.png); background-position-x: 50%; background-position-y: 50%;}
     .bg_img_section_04 {background-image: url(img/hugeinc04m.png); background-position-x: 50%; background-position-y: 50%;}
-    .bg_img_section_05 {background-image: url(img/hugeinc05m.jpg); background-position-x: 50%; background-position-y: 50%;}
+    .bg_img_section_05 {background-image: url(img/hugeinc05_resize.jpg); background-position-x: 50%; background-position-y: 50%;}
     .bg_img_section_06 {background-image: url(img/hugeinc06m.jpg); background-position-x: 50%; background-position-y: 50%;}
     .bg_img_section_07 {background-image: url(img/hugeinc07m.jpg); background-position-x: 50%; background-position-y: 50%;}
 }
