@@ -1,16 +1,5 @@
 @media screen and (max-height:660px) {
-    .section .content .subwrap {height: auto;}
-    .menu_wrap_hidden li {margin: 2.5vh 0;}
-    .gnb_aside {top: 320px !important;}
-}
-
-@media screen and (max-width:400px) {
-    .footer .wrap {width: 85% !important;}
-    .footer .wrap .right a {font-size: 10px;}
-}
-
-@media screen and (max-width:550px) {
-    .footer .wrap {width: 80%;}
+    .section .content .subwrap {height: auto;}    
 }
 
 @media screen and (max-width:900px) {
@@ -21,28 +10,9 @@
     .section .index p {font-size: 16px;}    
     .section .content .subwrap h2 {font-size: 72px;}
     .section .content > p {font-size: 16px;}
-
-    footer {height: 366px !important;}
-    .footer .wrap {display: block; padding: 120px 0;}
-    .footer .wrap .left {margin-bottom: 20px; align-items: center;}
-    .footer .wrap .left div {height: auto; font-size: 24px; padding-right: 20px; margin-right: 20px;}
-    .footer .wrap .left p {font-size: 14px; line-height: 20px;}
-
-    .footer .wrap .right p {text-align: left;}
 }
 
 @media screen and (max-width:767px) {
-    /* logo */
-    #logo_wrap {top: 27px; left: calc(50% - 30px); width: 60px; height: 60px;}
-    #logo_wrap2 {top: 27px; left: calc(50% - 30px); width: 60px; height: 60px;}
-    
-    /* header */    
-    nav {height: 80vh; align-items: initial;}
-    .menu_wrap {display: none;}
-    .menu_wrap_hidden {display: block; padding-top: 90px;}
-    .home_wrap h1 {font-size: 200px; padding: 75px 0 0 10px;}
-    .gnb_aside {top: 500px;}
-
     /* home */
     .title_hello {display: none;}
     .title_hi {display: block;}

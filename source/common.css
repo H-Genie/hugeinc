@@ -58,11 +58,11 @@ nav {width: 100%; height: 440px; display: flex; justify-content: center; align-i
 
 
 /* magenta */
-.magenta {width: 100vw; background-size: cover;}
+.magenta {width: 100%; background-size: cover;}
 .magenta >div:nth-child(1) {background-color: rgba(0,0,0,0.7); padding: 200px 0;}
-.magenta_wrap {width: 100vw; display: flex; justify-content: flex-start;}
+.magenta_wrap {width: 100%; display: flex; justify-content: flex-start;}
     
-    .magenta_wrap .left {width: 18.98734%; padding-bottom: 18.98734%; background-image: url(../work/img/thumbnail/magenta.gif); background-size: cover; margin-right: 1.25%; margin-left: calc(12.5vw + 15px);}
+    .magenta_wrap .left {width: 18.98734%; padding-bottom: 18.98734%; background-image: url(../work/img/thumbnail/magenta.gif); background-size: cover; margin-right: 1.25%; margin-left: calc(12.5% + 15px);}
 
     .magenta .right {width: 43.03797%; margin-left: 5.06329%; display: flex; flex-direction: column; justify-content: center;}
     .magenta .right h2 {font-family: HugeGothic-Bold; font-size: 80px; color: white;}
@@ -93,9 +93,9 @@ nav {width: 100%; height: 440px; display: flex; justify-content: center; align-i
 /* video */
 .hero_video {position: relative;}
 
-    .hero_video video {width: 100vw; height: auto; vertical-align: bottom;}
+    .hero_video video {width: 100%; vertical-align: bottom;}
 
-    .video_button {width: 74px; height: 74px; background-color: rgba(234, 23, 140, 0.6); position: absolute; top: calc(50vh - 37px); left: calc(50vw - 37px); display: flex; justify-content: center; align-items: center;}
+    .video_button {width: 74px; height: 74px; background-color: rgba(234, 23, 140, 0.6); position: absolute; top: calc(50% - 37px); left: calc(50% - 37px); display: flex; justify-content: center; align-items: center;}
     .video_button div {width: 16px; height: 16px;}
 
 
