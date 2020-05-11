@@ -5,7 +5,7 @@
 
 
 /* thumbnail */
-.work_02 {width: 100%; height: 210px; display: flex; justify-content: center; align-items: center; background-color: black; color: white; font-size: 56px; font-family: Galaxie-Book;}
+.work_02 {width: 100%; height: 210px; display: flex; justify-content: center; align-items: center; background-color: black; color: white; font-size: 56px; font-family: Galaxie-Book; text-align: center;}
 
 .work_03 {background-color: black; width: 100%; padding-bottom: 95px; box-sizing: border-box;}
     .work_03_ul {display: flex; width: 90vw; margin: 0 auto; flex-wrap: wrap;}

@@ -47,5 +47,8 @@
     .magenta_wrap {flex-direction: column;}
     .magenta .right {width: 75%; margin-left: calc(12.5% + 15px); margin-top: 50px;}
     .magenta .right h2 {font-size: 40px; line-height: 44px;}
+
+    /* video */
+    .video_button {width: 60px; height: 60px; top: calc(50% - 30px); left: calc(50% - 30px);}
 }
 
