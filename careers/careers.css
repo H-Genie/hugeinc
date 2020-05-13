@@ -8,7 +8,7 @@
 
 
 /* section_02 */
-.careers_02 {width: 100vw; background-color: white;}
+.careers_02 {width: 100%; background-color: white;}
     .careers_02 .container {margin: 0 auto; padding: 150px 12.171186%;}
         .careers_02 .container h3 {font-family: Galaxie-Book; margin-bottom: 20px;}
         .careers_02 .container p {margin-bottom: 60px;}
@@ -17,7 +17,7 @@
 
 
 /* section_03 */
-.careers_03 {width: 100vw; background-color: white;}
+.careers_03 {width: 100%; background-color: white;}
 
     .careers_03 .container {width: 74.68354%; margin: 0 auto; padding: 70px 0 140px; display: flex;justify-content: center;}
 
@@ -28,7 +28,7 @@
 
 
 /* section_04 */
-.careers_04 {width: 100vw; background-color: black;}
+.careers_04 {width: 100%; background-color: black;}
     
     .careers_04 .container {width: 74.68354%; margin: 0 auto; padding: 200px 0; box-sizing: border-box; display: flex;}
 

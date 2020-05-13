@@ -66,6 +66,7 @@
     .video_button {width: 60px; height: 60px; top: calc(50% - 30px); left: calc(50% - 30px);}
 
      /*  hero  */
+     .hero {height: 70vh; padding: 60px 0;}
     .hero h1 {font-size: 60px; line-height: 62px;}
     .hero_title {width: 74.35897%;}
     .section_subtitle_rule {width: 74.35897%;}
