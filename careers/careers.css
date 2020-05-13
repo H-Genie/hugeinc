@@ -3,6 +3,10 @@
 @import url("../source/common.css");
 
 
+/* video */
+.poster {width: 100%; height: 100%; background-image: url(img/hero_video.png); background-size: cover; background-position: 50% 50%;}
+
+
 /* section_02 */
 .careers_02 {width: 100vw; background-color: white;}
     .careers_02 .container {margin: 0 auto; padding: 150px 12.171186%;}

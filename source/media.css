@@ -25,9 +25,18 @@
     .footer .wrap .right p {text-align: left;}
 
     /* magenta */
-    .magenta_wrap .left {width: 30%; padding-bottom: 30%;}
+    .magenta_wrap .left {width: 30%;}
     .magenta .right h2 {font-size: 72px; line-height: 75px;}
 
+    /*  hero  */
+    .hero h1 {font-size: 104px; line-height: 91px;}
+    .hero_title {width: 83.05085%;}
+    .section_subtitle {width: 48.97959%;}
+    .section_subtitle_nopadding {width: 48.97959%;}
+    .section_subtitle_rule {width: 37.5%; margin-bottom: 20px;}
+    .section_subtitle_rule_white {width: 37.5%; margin-bottom: 20px;}
+    .section_subtitle h6 {font-size: 16px; line-height: 16px; margin-bottom: 50px;}
+    .section_subtitle_nopadding h6 {font-size: 16px; line-height: 16px; margin-bottom: 50px;}
 }
 
 @media screen and (max-width:767px) {
@@ -53,6 +62,15 @@
     .magenta .right h2 {font-size: 40px; line-height: 44px;}
 
     /* video */
+    .hero_video {height: 70vh;}
     .video_button {width: 60px; height: 60px; top: calc(50% - 30px); left: calc(50% - 30px);}
+
+     /*  hero  */
+    .hero h1 {font-size: 60px; line-height: 62px;}
+    .hero_title {width: 74.35897%;}
+    .section_subtitle_rule {width: 74.35897%;}
+    .section_subtitle_rule_white {width: 74.35897%;}
+    .section_subtitle h6 {font-size: 14px; line-height: 20px; margin-bottom: 50px;}
+    .section_subtitle_nopadding h6 {font-size: 14px; line-height: 20px; margin-bottom: 50px;}    
 }
 
