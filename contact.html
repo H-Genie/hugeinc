@@ -14,6 +14,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
         <link rel="stylesheet" type="text/css" href="contact/contact.css">
+        <link rel="stylesheet" type="text/css" href="source/media.css">
+        <link rel="stylesheet" type="text/css" href="contact/media.css">
         <link rel="icon" href="source/icon.png" sizes="16x16">
         <script type="text/javascript" src="source/javascript.js"></script>
         
@@ -21,64 +23,114 @@
 
     <body>
 
-        <!--logo-->
-        <div id="logo_wrap" onclick="logoClick()">
-            <img src="home/img/h.svg">
+<!--logo-->
+<div id="logo_wrap" onclick="logoClick()">
+    <img src="home/img/h.svg">
+</div>
+
+<div id="logo_wrap2" onclick="logo2Click()">
+    <img src="home/img/huge.svg">
+</div>
+
+
+
+<!--header-->
+<header id="section_header">
+
+    <nav>
+        <ul class="menu_wrap">
+            <li>
+                <a href="index.html">Hello.</a>
+                <p>Today at Huge.</p>
+                <div></div>
+            </li>
+
+            <li>
+                <a href="work.html">Work.</a>
+                <p>What we've mad.</p>
+                <div></div>
+            </li>
+
+            <li>
+                <a href="about.html">About.</a>
+                <p>Who we are.</p>
+                <div></div>
+            </li>
+
+            <li>
+                <a href="careers.html">Careers.</a>
+                <p>Join the team.</p>
+                <div></div>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact.</a>
+                <p>Get in touch.</p>
+                <div></div>
+            </li>         
+        </ul>
+
+        <div class="gnb_aside">
+            <p>Explore our thought leadership at</p>
+            <a>MAGENTA<span>.</span></a>
         </div>
 
+        <ul class="menu_wrap_hidden">
+            <li>
+                <a href="index.html"><div class="p_menu_title">Hello.</div></a>
+                <hr>
+                <div class="p_menu_describe">Today at Huge.</div>
+            </li>
 
-        <!--header-->
-        <header id="section_header">
+            <li>
+                <a href="work.html"><div class="p_menu_title">Work.</div></a>
+                <hr>
+                <div class="p_menu_describe">What we've made.</div>
+            </li>
 
-            <nav>
-                <ul class="menu_wrap">
-                    <li>
-                        <a href="index.html">Hello.</a>
-                        <p>Today at Huge.</p>
-                        <div></div>
-                    </li>
-    
-                    <li>
-                        <a href="work.html">Work.</a>
-                        <p>What we've mad.</p>
-                        <div></div>
-                    </li>
-    
-                    <li>
-                        <a href="about.html">About.</a>
-                        <p>Who we are.</p>
-                        <div></div>
-                    </li>
-    
-                    <li>
-                        <a href="careers.html">Careers.</a>
-                        <p>Join the team.</p>
-                        <div></div>
-                    </li>
-    
-                    <li>
-                        <a href="contact.html">Contact.</a>
-                        <p>Get in touch.</p>
-                        <div></div>
-                    </li>         
-                </ul>
-    
-                <div class="gnb_aside">
-                    <p>Explore our thought leadership at</p>
-                    <a>MAGENTA<span>.</span></a>
-                </div>
-            </nav>
-    
-        </header>
+            <li>
+                <a href="about.html"><div class="p_menu_title">About.</div></a>
+                <hr>
+                <div class="p_menu_describe">Who we are.</div>
+            </li>
+
+            <li>
+                <a href="careers.html"><div class="p_menu_title">Careers.</div></a>
+                <hr>
+                <div class="p_menu_describe">Join the team.</div>
+            </li>
+
+            <li>
+                <a href="contact.html"><div class="p_menu_title">Contact.</div></a>
+                <hr>
+                <div class="p_menu_describe">Get in touch.</div>
+            </li>
+        </ul>
+    </nav>
+
+</header>
 
 
         <main id="main_extend">
 
             <!--hero-->
             <section class="hero hero_contact">
-                <h1 class="hero_title font_white">Hello.</h1>
+                <h1 class="hero_title font_white" id="greeting"></h1>
             </section>
 
+            <script>
+                var array=["Hello.","Hola.","Buenas.","Ola.","Ei.","你好.","E'yo.","Ello.","Aye."];
+                var index=0;
+
+                function updateGreeting() {
+                    if(index==9)
+                    index=0;
+                    document.getElementById('greeting').innerHTML=array[index++];
+                    setTimeout("updateGreeting()",1000);                   
+                }
+
+                updateGreeting();                
+            </script>
 
             <!--section_02-->
             <section class="contact_02 font_white">
@@ -143,19 +195,20 @@
 
                 <ul>
 
-                    <a href="contact/atlanta.html"><li class="bg_white">
+                    <a href="contact/atlanta.html"><li class="bg_white timezone">
                         <h4>Atlanta.</h4>
                         <h5>Ayee.</h5>
-                        <p>UTC -06:00</p>
+                        <p class="utc-6"></p>
                         <p>+1 404 461 9025</p>
                         <p>alt@hugeinc.com</p>
                         <img src="contact/img/am.svg">
                     </li></a>
+                    
 
-                    <a><li class="bg_white">
+                    <a><li class="bg_white timezone">
                         <h4>Bogotá.</h4>
                         <h5>Hola.</h5>
-                        <p>UTC -05:00</p>
+                        <p class="utc-5"></p>
                         <p>+1 571 3810606</p>
                         <p>bog@hugeinc.com</p>
                         <img src="contact/img/am.svg">
@@ -164,7 +217,7 @@
                     <a><li class="bg_white">
                         <h4>Brooklyn.</h4>
                         <h5>Yo.</h5>
-                        <p>UTC -05:00</p>
+                        <p class="utc-5"></p>
                         <p>+1 718 625 4843</p>
                         <p>chi@hugeinc.com</p>
                         <img src="contact/img/am.svg">
@@ -174,7 +227,7 @@
                     <a><li class="bg_white">
                         <h4>Chicago.</h4>
                         <h5>Hey.</h5>
-                        <p>UTC -06:00</p>
+                        <p class="utc-6"></p>
                         <p>+1 312 637 3150</p>
                         <p>bk@hugeinc.com</p>
                         <img src="contact/img/am.svg">
@@ -183,7 +236,7 @@
                     <a><li class="bg_white">
                         <h4>DC.</h4>
                         <h5>Hi.</h5>
-                        <p>UTC -05:00</p>
+                        <p class="utc-5"></p>
                         <p>+1 202 350 4600</p>
                         <p>det@hugeinc.com</p>
                         <img src="contact/img/am.svg">
@@ -192,7 +245,7 @@
                     <a><li class="bg_white">
                         <h4>Detroit.</h4>
                         <h5>Whad'up.</h5>
-                        <p>UTC -05:00</p>
+                        <p class="utc-5"></p>
                         <p>+1 248 731 0600</p>
                         <p>det@hugeinc.com</p>
                         <img src="contact/img/am.svg">
@@ -202,7 +255,7 @@
                     <a><li class="bg_white">
                         <h4>London.</h4>
                         <h5>'Ello.</h5>
-                        <p>UTC ±00:00</p>
+                        <p class="utc0"></p>
                         <p>+44 (0)203 356 1900</p>
                         <p>ldn@hugeinc.com</p>
                         <img src="contact/img/am.svg">
@@ -211,7 +264,7 @@
                     <a><li class="bg_white">
                         <h4>Los Angeles.</h4>
                         <h5>E'yo.</h5>
-                        <p>UTC -08:00</p>
+                        <p class="utc-8"></p>
                         <p>+1 310 499 7700</p>
                         <p>la@hugeinc.com</p>
                         <img src="contact/img/am.svg">
@@ -220,7 +273,7 @@
                     <a><li class="bg_white">
                         <h4>Medellín.</h4>
                         <h5>Buenas.</h5>
-                        <p>UTC -05:00</p>
+                        <p class="utc-5"></p>
                         <p>+57 4 604 5535</p>
                         <p>mde@hugeinc.com</p>
                         <img src="contact/img/am.svg">
@@ -230,7 +283,7 @@
                     <a><li class="bg_white">
                         <h4>Oakland.</h4>
                         <h5>Sup.</h5>
-                        <p>UTC -08:00</p>
+                        <p class="utc-8"></p>
                         <p>+1 510 735 0700</p>
                         <p>oak@hugeinc.com</p>
                         <img src="contact/img/am.svg">
@@ -239,16 +292,16 @@
                     <a><li class="font_white bg_0b"> <!--아시아-->
                         <h4>Singapore.</h4>
                         <h5>你好.</h5>
-                        <p>UTC +08:00</p>
+                        <p class="utc+8"></p>
                         <p>+1 404 461 9025</p>
                         <p>alt@hugeinc.com</p>
-                        <img src="contact/img/pm.svg" style="width: 25px;">
+                        <img src="contact/img/night.svg">
                     </li></a>
 
                     <a><li class="bg_white">
                         <h4>Toronto.</h4>
                         <h5>Eh?.</h5>
-                        <p>UTC -05:00</p>
+                        <p class="utc-5"></p>
                         <p>+1 416 800 0466</p>
                         <p>to@hugeinc.com</p>
                         <img src="contact/img/am.svg">
@@ -258,15 +311,17 @@
                     <a><li class="font_white bg_0b"> <!--아시아-->
                         <h4>Tokyo.</h4>
                         <h5>こんにちは</h5>
-                        <p>UTC +09:00</p>
+                        <p class="utc+9"></p>
                         <p>+81 3 4577 7930</p>
                         <p>tyo@hugeinc.com</p>
-                        <img src="contact/img/pm.svg" style="width: 25px;">
+                        <img src="contact/img/night.svg">
                     </li></a>
 
                 </ul>
 
             </section>
+
+            <script type="text/javascript" src="contact/clock.js"></script>
 
 
             <!--magenta-->
@@ -274,7 +329,9 @@
 
                 <div> <!--rgba 0.7-->
                     <div class="magenta_wrap">
-                        <a class="left"></a>
+                        <a class="left">
+                            <img src="work/img/thumbnail/magenta.gif">
+                        </a>
 
                         <a class="right">
                             <h2>Good Content Isn’t Enough.</h2>
