@@ -1,4 +1,3 @@
-<!-- contact v 4.5 -->
 <!DOCTYPE html>
 
 <html lang="ko">
@@ -195,13 +194,13 @@
 
                 <ul>
 
-                    <a href="contact/atlanta.html"><li class="bg_white timezone">
+                    <a href="contact/atlanta.html"><li id="office_card">
                         <h4>Atlanta.</h4>
                         <h5>Ayee.</h5>
-                        <p class="utc-6"></p>
+                        <p id="present_time"></p>
                         <p>+1 404 461 9025</p>
                         <p>alt@hugeinc.com</p>
-                        <img src="contact/img/am.svg">
+                        <img src="contact/img/am.svg" id="time_sign">
                     </li></a>
                     
 
@@ -295,7 +294,7 @@
                         <p class="utc+8"></p>
                         <p>+1 404 461 9025</p>
                         <p>alt@hugeinc.com</p>
-                        <img src="contact/img/night.svg">
+                        <img src="contact/img/pm.svg">
                     </li></a>
 
                     <a><li class="bg_white">
@@ -314,7 +313,7 @@
                         <p class="utc+9"></p>
                         <p>+81 3 4577 7930</p>
                         <p>tyo@hugeinc.com</p>
-                        <img src="contact/img/night.svg">
+                        <img src="contact/img/pm.svg">
                     </li></a>
 
                 </ul>
@@ -322,6 +321,41 @@
             </section>
 
             <script type="text/javascript" src="contact/clock.js"></script>
+
+            <script>
+                var presentHour=new Date().getHours();
+                var presentMin=new Date().getMinutes();
+                var amPm="AM";
+
+                //오전오후 비교문
+                if(presentHour<12) {
+                    document.getElementById('present_time').innerHTML=presentHour+":"+presentMin+" "+amPm;
+                    }
+                else { 
+                    amPm="PM"
+                    if(presentHour!=12) {
+                        presentHour=presentHour-12;
+                    }                    
+                    document.getElementById('present_time').innerHTML=presentHour+":"+presentMin+" "+amPm;                    
+                }
+
+                //영업시간 비교문
+                if(8<presentHour) {
+                    if(presentHour<19) {
+                        document.getElementById('office_card').style="background-color:#fff; color:black;";                        
+                        document.getElementById('time_sign').src="contact/img/am.svg";    
+                    }
+                    else {
+                        document.getElementById('office_card').style="background-color:#161616; color:white;";                        
+                        document.getElementById('time_sign').src="contact/img/pm.svg";    
+                    }
+                }
+                else {
+                    document.getElementById('office_card').style="background-color:#161616; color:white;";                    
+                    document.getElementById('time_sign').src="contact/img/pm.svg";    
+                }
+                
+            </script>
 
 
             <!--magenta-->
