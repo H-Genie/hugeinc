@@ -1,4 +1,3 @@
-//logo
 var header_state=0;
 
 function logoClick () {

@@ -16,6 +16,7 @@
     /* home */
     .title_hello {display: none;}
     .title_hi {display: block;}
+    .home_wrap h1 {font-size: 200px;}
 
     /* section */
     .section {padding-left:6.329115%; position: relative;}
@@ -39,4 +40,3 @@
     .bg_img_section_06 {background-image: url(img/hugeinc06m.jpg); background-position-x: 50%; background-position-y: 50%;}
     .bg_img_section_07 {background-image: url(img/hugeinc07m.jpg); background-position-x: 50%; background-position-y: 50%;}
 }
-

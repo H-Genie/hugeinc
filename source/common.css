@@ -1,11 +1,9 @@
-/* Common v4.3*/
-
 @import url("reset.css");
 @import url("font.css");
 
 
 /* logo */
-#logo_wrap {width: 74px; height: 74px; background-color: #fff; display: flex; justify-content: center; align-items: center; position: fixed; top: 52px; left: calc(50% - 37px); z-index: 200;  padding-top: 2px; box-sizing: border-box; font-family: HugeGothic-Bold; font-size: 36px; color: #ea178c; transition: background-color 0.7s;
+#logo_wrap {width: 74px; height: 74px; background-color: #fff; display: flex; justify-content: center; align-items: center; position: fixed; top: 52px; left: calc(50% - 37px); z-index: 200;  padding-top: 2px; box-sizing: border-box; font-family: HugeGothic-Bold; font-size: 36px; color: #ea178c; transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 
     background: linear-gradient(315deg, #ffffff,#ffffff, #ea178c, #ffffff, #ea178c, #ffffff, #ffffff, #ffffff);
     background-size: 800% 800%;
@@ -19,7 +17,7 @@
 
 #logo_wrap img {width: 20px;}
 
-#logo_wrap2 {width: 74px; height: 74px; background-color: #f4f4f4; justify-content: center; align-items: center; position: fixed; top: 52px; left: calc(50% - 37px); z-index: 200;  padding-top: 2px; box-sizing: border-box; font-family: HugeGothic-Bold; font-size: 36px; color: #ea178c; display: none; transition: background-color 0.7s;}
+#logo_wrap2 {width: 74px; height: 74px; background-color: #f4f4f4; justify-content: center; align-items: center; position: fixed; top: 52px; left: calc(50% - 37px); z-index: 200;  padding-top: 2px; box-sizing: border-box; font-family: HugeGothic-Bold; font-size: 36px; color: #ea178c; display: none; transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);}
 
 
 
@@ -29,9 +27,9 @@
 
 
 /* header */
-main {width: 100%; transition: padding 0.75s;}
+main {width: 100%; transition: padding 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);}
 
-/* id=section_header */ header {width: 100%; height: 0px; display: block; background-color: #f4f4f4; position: fixed; z-index: 100; overflow: hidden; transition: height 0.7s;} 
+/* id=section_header */ header {width: 100%; height: 0px; display: block; background-color: #f4f4f4; position: fixed; z-index: 100; overflow: hidden; transition: height 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);} 
 
 
 nav {width: 100%; height: 440px; display: flex; justify-content: center; align-items: center; box-sizing: border-box; position: relative;}
@@ -59,7 +57,7 @@ nav {width: 100%; height: 440px; display: flex; justify-content: center; align-i
 
 /* magenta */
 .magenta {width: 100%; background-size: cover;}
-.magenta >div:nth-child(1) {background-color: rgba(0,0,0,0.7); padding: 200px 0;}
+.magenta >div:nth-child(1) {background-color: rgba(0,0,0,0.3); padding: 200px 0;}
 .magenta_wrap {width: 100%; display: flex; justify-content: flex-start;}
     
     .magenta_wrap .left {width: 18.98734%; margin-right: 1.25%; margin-left: calc(12.5% + 15px);}
@@ -77,7 +75,9 @@ nav {width: 100%; height: 440px; display: flex; justify-content: center; align-i
 .footer .wrap {width: 75%; padding: 70px 15px 87px; box-sizing: border-box; display: flex; justify-content: space-between;}
 
     .footer .wrap .left {display: flex; padding-top: 5px; box-sizing: border-box;}
-        .footer .wrap .left div {height: 36px; font-family: HugeGothic-Bold; font-size: 32px; letter-spacing: 1px; padding-right: 23px; box-sizing: border-box; border-right: 1px solid #888888; margin-right: 23px; color: white;}
+        
+        
+    .footer .wrap .left div {height: 36px; font-family: HugeGothic-Bold; font-size: 32px; letter-spacing: 1px; padding-right: 23px; box-sizing: border-box; border-right: 1px solid #888888; margin-right: 23px; color: white;}
         .footer .wrap .left p {line-height: 36px; font-size: 16px; letter-spacing: 1.5px; color: white;}
 
     
