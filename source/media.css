@@ -23,7 +23,7 @@
     footer {height: 366px !important;}
     .footer .wrap {display: block; padding: 120px 0;}
     .footer .wrap .left {margin-bottom: 20px; align-items: center;}
-    .footer .wrap .left div {height: auto; font-size: 24px; padding-right: 20px; margin-right: 20px;}
+    .footer .wrap .left div {font-size: 24px; padding-right: 20px; margin-right: 20px;}
     .footer .wrap .left p {font-size: 14px; line-height: 20px;}
 
     .footer .wrap .right p {text-align: left;}
@@ -58,6 +58,7 @@
     /* footer */
     footer {height: auto !important;}
     .footer .wrap {padding: 50px 0;}
+    .footer .wrap .left div {height: 26px;}
 
     /* magenta */
     .magenta >div:nth-child(1) {padding: 80px 0;}

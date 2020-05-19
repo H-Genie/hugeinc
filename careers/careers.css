@@ -10,7 +10,7 @@
     .careers_02 .container {margin: 0 auto; padding: 150px 12.171186%;}
         .careers_02 .container h3 {font-family: Galaxie-Book; margin-bottom: 20px;}
         .careers_02 .container p {margin-bottom: 60px;}
-        .careers_02 .container a {color: white; padding: 30px 45px; box-sizing: border-box; background-color: black; display: inline-block; cursor: pointer;}
+        .careers_02 .container a {color: white; padding: 30px 45px; box-sizing: border-box; background-color: black; display: inline-block; cursor: pointer; transition: opacity 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);;}
         .careers_02 .container a:hover {opacity: 0.5;}
 
 

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+    <head>
+
+        <title>Contact.</title>
+
+        <meta charset="UTF-8">
+        <meta name="author" content="H-Genie">
+        <meta name="description" content=" ">
+        <meta name="keywords" content=" ">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" type="text/css" href="contact/contact.css">
+        <link rel="stylesheet" type="text/css" href="source/media.css">
+        <link rel="stylesheet" type="text/css" href="contact/media.css">
+        <link rel="icon" href="source/icon.png" sizes="16x16">
+        <script type="text/javascript" src="source/javascript.js"></script>
+        
+    </head>
+
+    <body>
+
+<!--logo-->
+<div id="logo_wrap" onclick="logoClick()">
+    <img src="home/img/h.svg">
+</div>
+
+<div id="logo_wrap2" onclick="logo2Click()">
+    <img src="home/img/huge.svg">
+</div>
+
+
+
+<!--header-->
+<header id="section_header">
+
+    <nav>
+        <ul class="menu_wrap">
+            <li>
+                <a href="index.html">Hello.</a>
+                <p>Today at Huge.</p>
+                <div></div>
+            </li>
+
+            <li>
+                <a href="work.html">Work.</a>
+                <p>What we've mad.</p>
+                <div></div>
+            </li>
+
+            <li>
+                <a href="about.html">About.</a>
+                <p>Who we are.</p>
+                <div></div>
+            </li>
+
+            <li>
+                <a href="careers.html">Careers.</a>
+                <p>Join the team.</p>
+                <div></div>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact.</a>
+                <p>Get in touch.</p>
+                <div></div>
+            </li>         
+        </ul>
+
+        <div class="gnb_aside">
+            <p>Explore our thought leadership at</p>
+            <a>MAGENTA<span>.</span></a>
+        </div>
+
+        <ul class="menu_wrap_hidden">
+            <li>
+                <a href="index.html"><div class="p_menu_title">Hello.</div></a>
+                <hr>
+                <div class="p_menu_describe">Today at Huge.</div>
+            </li>
+
+            <li>
+                <a href="work.html"><div class="p_menu_title">Work.</div></a>
+                <hr>
+                <div class="p_menu_describe">What we've made.</div>
+            </li>
+
+            <li>
+                <a href="about.html"><div class="p_menu_title">About.</div></a>
+                <hr>
+                <div class="p_menu_describe">Who we are.</div>
+            </li>
+
+            <li>
+                <a href="careers.html"><div class="p_menu_title">Careers.</div></a>
+                <hr>
+                <div class="p_menu_describe">Join the team.</div>
+            </li>
+
+            <li>
+                <a href="contact.html"><div class="p_menu_title">Contact.</div></a>
+                <hr>
+                <div class="p_menu_describe">Get in touch.</div>
+            </li>
+        </ul>
+    </nav>
+
+</header>
+
+
+        <main id="main_extend">
+
+            <!--hero-->
+            <section class="hero hero_contact">
+                <h1 class="hero_title font_white" id="greeting"></h1>
+            </section>
+
+            <script>
+                var array=["Hello.","Hola.","Buenas.","Ola.","Ei.","你好.","E'yo.","Ello.","Aye."];
+                var index=0;
+
+                function updateGreeting() {
+                    if(index==9)
+                    index=0;
+                    document.getElementById('greeting').innerHTML=array[index++];
+                    setTimeout("updateGreeting()",1000);                   
+                }
+
+                updateGreeting();                
+            </script>
+
+            <!--section_02-->
+            <section class="contact_02 font_white">
+
+                <div class="container">
+
+                    <div class="section_subtitle">
+                        <hr class="section_subtitle_rule_white">
+                        <h6>Hello.</h6>
+                    </div>
+
+                    <div class="content">
+                        
+                        <h3 class="title">We're here for you. Say hi.</h3>
+                        
+                        <div class="text_wrap">
+
+                            <div class="text">
+                                <p>Become a Client.</p>
+                                <div>
+                                    <p>+1 718 618 4724</p>
+                                    <p><a>business@hugeinc.com</a></p>
+                                </div>
+                            </div>
+
+                            <div class="text">
+                                <p>Media Inquiries.</p>
+                                <div>
+                                    <p>+1 718 880 3724</p>
+                                    <p><a>press@hugeinc.com</a></p>
+                                </div>
+                            </div>
+
+                            <div class="text">
+                                <p>John Huge.</p>
+                                <div>
+                                    <p>+1 718 625 4843</p>
+                                    <p><a>work@hugeinc.com</a></p>
+                                </div>
+                            </div>
+
+                            <div class="text">
+                                <p>Everything Else.</p>
+                                <div>
+                                    <p>+1 718 625 4843</p>
+                                    <p><a>hello@hugeinc.com</a></p>
+                                </div>
+                            </div>
+
+                        </div>
+                       
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+            <!--section_03-->
+            <section class="contact_03">
+
+                <ul>
+
+                    <a href="contact/atlanta.html"><li id="atlanta_card">
+                        <h4>Atlanta.</h4>
+                        <h5>Ayee.</h5>                        
+                        <p id="atlanta"></p>
+                        <p>+1 404 461 9025</p>
+                        <p>alt@hugeinc.com</p>
+                        <img src="contact/img/am.svg" id="atlanta_sign">
+                    </li></a>
+                    
+
+                    <a><li id="bogota_card">
+                        <h4>Bogotá.</h4>
+                        <h5>Hola.</h5>
+                        <p id="bogota"></p>
+                        <p>+1 571 3810606</p>
+                        <p>bog@hugeinc.com</p>
+                        <img src="contact/img/am.svg" id="bogota_sign">
+                    </li></a>
+
+                    <a><li id="brooklyn_card">
+                        <h4>Brooklyn.</h4>
+                        <h5>Yo.</h5>                        
+                        <p id="brooklyn"></p>
+                        <p>+1 718 625 4843</p>
+                        <p>chi@hugeinc.com</p>
+                        <img src="contact/img/am.svg" id="brooklyn_sign">
+                    </li></a>
+
+                    <!--줄바꿈-->
+                    <a><li id="chicago_card">
+                        <h4>Chicago.</h4>
+                        <h5>Hey.</h5>                        
+                        <p id="chicago"></p>
+                        <p>+1 312 637 3150</p>
+                        <p>bk@hugeinc.com</p>
+                        <img src="contact/img/am.svg" id="chicago_sign">
+                    </li></a>
+
+                    <a><li id="dc_card">
+                        <h4>DC.</h4>
+                        <h5>Hi.</h5>                        
+                        <p id="dc"></p>
+                        <p>+1 202 350 4600</p>
+                        <p>det@hugeinc.com</p>
+                        <img src="contact/img/am.svg" id="dc_sign">
+                    </li></a>
+
+                    <a><li id="detroit_card">
+                        <h4>Detroit.</h4>
+                        <h5>Whad'up.</h5>
+                        <p id="detroit"></p>
+                        <p>+1 248 731 0600</p>
+                        <p>det@hugeinc.com</p>
+                        <img src="contact/img/am.svg" id="detroit_sign">
+                    </li></a>
+
+                    <!--줄바꿈-->
+                    <a><li id="london_card">
+                        <h4>London.</h4>
+                        <h5>'Ello.</h5>
+                        <p id="london"></p>
+                        <p>+44 (0)203 356 1900</p>
+                        <p>ldn@hugeinc.com</p>
+                        <img src="contact/img/am.svg" id="london_sign">
+                    </li></a>
+
+                    <a><li id="la_card">
+                        <h4>Los Angeles.</h4>
+                        <h5>E'yo.</h5>
+                        <p id="la"></p>
+                        <p>+1 310 499 7700</p>
+                        <p>la@hugeinc.com</p>
+                        <img src="contact/img/am.svg" id="la_sign">
+                    </li></a>
+
+                    <a><li id="medellin_card">
+                        <h4>Medellín.</h4>
+                        <h5>Buenas.</h5>
+                        <!--<p class="utc-5"></p>-->
+                        <p id="medellin"></p>
+                        <p>+57 4 604 5535</p>
+                        <p>mde@hugeinc.com</p>
+                        <img src="contact/img/am.svg" id="medellin_sign">
+                    </li></a>
+
+                    <!--줄바꿈-->
+                    <a><li id="oakland_card">
+                        <h4>Oakland.</h4>
+                        <h5>Sup.</h5>
+                        <p id="oakland"></p>
+                        <p>+1 510 735 0700</p>
+                        <p>oak@hugeinc.com</p>
+                        <img src="contact/img/am.svg" id="oakland_sign">
+                    </li></a>
+
+                    <a><li id="singapore_card">
+                        <h4>Singapore.</h4>
+                        <h5>你好.</h5>
+                        <p id="singapore"></p>
+                        <p>+1 404 461 9025</p>
+                        <p>alt@hugeinc.com</p>
+                        <img src="contact/img/pm.svg" id="singapore_sign">
+                    </li></a>
+
+                    <a><li id="toronto_card">
+                        <h4>Toronto.</h4>
+                        <h5>Eh?.</h5>
+                        <!--<p class="utc-4"></p>-->
+                        <p id="toronto"></p>
+                        <p>+1 416 800 0466</p>
+                        <p>to@hugeinc.com</p>
+                        <img src="contact/img/am.svg" id="toronto_sign">
+                    </li></a>
+
+                    <!--줄바꿈-->
+                    <a><li id="tokyo_card">
+                        <h4>Tokyo.</h4>
+                        <h5>こんにちは</h5>
+                        <p id="tokyo"></p>
+                        <p>+81 3 4577 7930</p>
+                        <p>tyo@hugeinc.com</p>
+                        <img src="contact/img/pm.svg" id="tokyo_sign">
+                    </li></a>
+
+                </ul>
+
+            </section>
+
+            <!--<script type="text/javascript" src="contact/clock.js"></script>-->
+            <script type="text/javascript" src="contact/world_time_id.js"></script>
+            <!--<script type="text/javascript" src="contact/world_time_class.js"></script>-->
+
+        
+
+            <!--magenta-->
+            <div class="magenta careers_magenta_bg">
+
+                <div> <!--rgba 0.7-->
+                    <div class="magenta_wrap">
+                        <a class="left">
+                            <img src="work/img/thumbnail/magenta.gif">
+                        </a>
+
+                        <a class="right">
+                            <h2>Good Content Isn’t Enough.</h2>
+                            <p>How to find — and grow — audience in 2018 and beyond.</p>
+                        </a>
+                    </div>
+                </div>
+            
+            </div>
+           
+        </main>
+       
+
+         <!--footer-->
+        <footer class="footer">
+
+            <div class="wrap">
+
+                <div class="left">
+                    <div><img src="source/huge_footer.svg"></div>                
+                    <p class="font_white">Make something you love.</p>
+                </div>
+
+                <ul class="right">
+                    <li>
+                        <a href="index.html">Hello</a>
+                        <a href="work.html">Work</a>
+                        <a href="about.html">About</a>
+                        <a href="careers.html">Careers</a>
+                        <a href="contact.html">Contact</a>                        
+                    </li>
+
+                    <p>© 2020 Huge LLC. Legal. <br>
+                        CCPA Privacy Notice <br>
+                        Modern Slavery Act Statement
+                    </p>
+                </ul>
+
+            </div>
+
+        </footer>
+
+        
+    <!--body 끝--></body> 
+</html>
