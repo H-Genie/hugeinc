@@ -6,13 +6,13 @@ var timeZone=[-4,-5,-4,-5,-4,-4,1,-7,-5,-7,8,-4,9]
 //24시간 보정 함수
 function hourAdjustment(a) {
     a=utcHour+a;
-    if(a>=24) {a-=24;} else if(a<0) {a+=24;}    
+    if(a>24) {a-=24;} else if(a<0) {a+=24;}    
     return a;
 }
 
 //오전오후 판단 함수
 function meridiem(a) { 
-    if(a>=12) {b="PM"} else{b="AM"}
+    if(a>=12) {b="PM"} else if(a==24 || a==0) {b="AM"} else if(a<12) {b="AM"}    
     return b;
 }
 
@@ -23,8 +23,8 @@ function minDigit(a) {
 }
 
 //12시간 보정 함수
-function hourAdjustment12(a) {
-    if(a>12) {a-=12;}
+function hourAdjustment12(a) {  
+    if(a>12) {a-=12;} else if(a==24 || a==0) {a=12;} else if(a<=12) {a=a;}    
     return a;
 }
 
@@ -38,7 +38,7 @@ function hugeTime() {
     for (i=0; i<13; i++) {
         document.getElementsByClassName('time')[i].innerHTML=hourAdjustment12(hourAdjustment(timeZone[i]))+" : "+minDigit(utcMin)+" "+meridiem(hourAdjustment(timeZone[i]));
 
-        if(4<hourAdjustment(timeZone[i]) && hourAdjustment(timeZone[i])<20) {
+        if(5<=hourAdjustment(timeZone[i]) && hourAdjustment(timeZone[i])<=18) {
             document.getElementsByClassName("office_card")[i].style="color:black; background-color:#fff;";
             document.getElementsByClassName("sign")[i].src="contact/img/am.svg";       
         }
