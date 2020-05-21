@@ -1,9 +1,9 @@
 var header_state=0;
 
 function logoClick () {  
-    document.getElementById('hover_border').classList.add('open');
-          
+             
     if (document.body.clientWidth>767) {
+        document.getElementById('hover_border').classList.add('open');
               
         if (header_state==0) {
                  
@@ -29,9 +29,9 @@ function logoClick () {
 }
 
 function logo2Click () {
-    document.getElementById('hover_border').classList.remove('open');
-   
+       
     if (document.body.clientWidth>767) {
+        document.getElementById('hover_border').classList.remove('open');
         
         if (header_state==1) {
             document.getElementById("section_header").style="height:0px;";
@@ -55,10 +55,14 @@ function logo2Click () {
 }
 
 
-function borderOn() {    
+function borderOn() {  
+    if (document.body.clientWidth>767) {
     document.getElementById('hover_border').style="border-top:90px solid #f4f4f4; border-right:50px solid #f4f4f4; border-bottom:50px solid #f4f4f4; border-left:50px solid #f4f4f4;";
+    }
 }  
     
 function borderOff() {
+    if (document.body.clientWidth>767) {
     document.getElementById('hover_border').style="border-top:0px solid #f4f4f4; border-right:0px solid #f4f4f4; border-bottom:0px solid #f4f4f4; border-left: 0px solid #f4f4f4;";
+    }
 }
