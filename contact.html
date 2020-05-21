@@ -22,92 +22,94 @@
 
     <body>
 
-<!--logo-->
-<div id="logo_wrap" onclick="logoClick()">
-    <img src="home/img/h.svg">
-</div>
-
-<div id="logo_wrap2" onclick="logo2Click()">
-    <img src="home/img/huge.svg">
-</div>
-
-
-
-<!--header-->
-<header id="section_header">
-
-    <nav>
-        <ul class="menu_wrap">
-            <li>
-                <a href="index.html">Hello.</a>
-                <p>Today at Huge.</p>
-                <div></div>
-            </li>
-
-            <li>
-                <a href="work.html">Work.</a>
-                <p>What we've mad.</p>
-                <div></div>
-            </li>
-
-            <li>
-                <a href="about.html">About.</a>
-                <p>Who we are.</p>
-                <div></div>
-            </li>
-
-            <li>
-                <a href="careers.html">Careers.</a>
-                <p>Join the team.</p>
-                <div></div>
-            </li>
-
-            <li>
-                <a href="contact.html">Contact.</a>
-                <p>Get in touch.</p>
-                <div></div>
-            </li>         
-        </ul>
-
-        <div class="gnb_aside">
-            <p>Explore our thought leadership at</p>
-            <a>MAGENTA<span>.</span></a>
+        <!--logo-->
+        <div id="logo_wrap" onclick="logoClick()" onmouseover="borderOn()" onmouseout="borderOff()">
+            <svg class="h-logo__svg" viewBox="0 0 20 28" xmlns="http://www.w3.org/2000/svg" title="Menu"><path d="M35,24H28V51h7V41h6V51h7V24H41V34H35V24Z" class="h-logo__path" transform="translate(-28 -24)" fill="#ea178c"></path></svg>
         </div>
 
-        <ul class="menu_wrap_hidden">
-            <li>
-                <a href="index.html"><div class="p_menu_title">Hello.</div></a>
-                <hr>
-                <div class="p_menu_describe">Today at Huge.</div>
-            </li>
+        <div id="logo_wrap2" onclick="logo2Click()">
+            <img src="home/img/huge.svg">
+        </div>
+                
+        <div id="hover_border"></div>
 
-            <li>
-                <a href="work.html"><div class="p_menu_title">Work.</div></a>
-                <hr>
-                <div class="p_menu_describe">What we've made.</div>
-            </li>
 
-            <li>
-                <a href="about.html"><div class="p_menu_title">About.</div></a>
-                <hr>
-                <div class="p_menu_describe">Who we are.</div>
-            </li>
 
-            <li>
-                <a href="careers.html"><div class="p_menu_title">Careers.</div></a>
-                <hr>
-                <div class="p_menu_describe">Join the team.</div>
-            </li>
+        <!--header-->
+        <header id="section_header">
 
-            <li>
-                <a href="contact.html"><div class="p_menu_title">Contact.</div></a>
-                <hr>
-                <div class="p_menu_describe">Get in touch.</div>
-            </li>
-        </ul>
-    </nav>
+            <nav>
+                <ul class="menu_wrap">
+                    <li>
+                        <a href="index.html">Hello.</a>
+                        <p>Today at Huge.</p>
+                        <div></div>
+                    </li>
 
-</header>
+                    <li>
+                        <a href="work.html">Work.</a>
+                        <p>What we've mad.</p>
+                        <div></div>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About.</a>
+                        <p>Who we are.</p>
+                        <div></div>
+                    </li>
+
+                    <li>
+                        <a href="careers.html">Careers.</a>
+                        <p>Join the team.</p>
+                        <div></div>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact.</a>
+                        <p>Get in touch.</p>
+                        <div></div>
+                    </li>         
+                </ul>
+
+                <div class="gnb_aside">
+                    <p>Explore our thought leadership at</p>
+                    <a>MAGENTA<span>.</span></a>
+                </div>
+
+                <ul class="menu_wrap_hidden">
+                    <li>
+                        <a href="index.html"><div class="p_menu_title">Hello.</div></a>
+                        <hr>
+                        <div class="p_menu_describe">Today at Huge.</div>
+                    </li>
+
+                    <li>
+                        <a href="work.html"><div class="p_menu_title">Work.</div></a>
+                        <hr>
+                        <div class="p_menu_describe">What we've made.</div>
+                    </li>
+
+                    <li>
+                        <a href="about.html"><div class="p_menu_title">About.</div></a>
+                        <hr>
+                        <div class="p_menu_describe">Who we are.</div>
+                    </li>
+
+                    <li>
+                        <a href="careers.html"><div class="p_menu_title">Careers.</div></a>
+                        <hr>
+                        <div class="p_menu_describe">Join the team.</div>
+                    </li>
+
+                    <li>
+                        <a href="contact.html"><div class="p_menu_title">Contact.</div></a>
+                        <hr>
+                        <div class="p_menu_describe">Get in touch.</div>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
 
 
         <main id="main_extend">
@@ -197,7 +199,16 @@
                     <a href="contact/atlanta.html"><li class="office_card">
                         <h4>Atlanta.</h4>
                         <h5>Ayee.</h5>                                                
-                        <p class="time"></p>                                                     
+                        <p class="time"></p>
+                        <!--
+                        <p>
+                            <span class="hour"></span>
+                            <span> : </span>
+                            <span class="minutes"></span>
+                            <span class="meridiem"></span>
+                            
+                        </p>
+                        -->
                         <p>+1 404 461 9025</p>
                         <p>alt@hugeinc.com</p>
                         <img class="sign">

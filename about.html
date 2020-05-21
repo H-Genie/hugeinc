@@ -23,13 +23,15 @@
     <body>
 
         <!--logo-->
-        <div id="logo_wrap" onclick="logoClick()">
-            <img src="home/img/h.svg">
+        <div id="logo_wrap" onclick="logoClick()" onmouseover="borderOn()" onmouseout="borderOff()">
+            <svg class="h-logo__svg" viewBox="0 0 20 28" xmlns="http://www.w3.org/2000/svg" title="Menu"><path d="M35,24H28V51h7V41h6V51h7V24H41V34H35V24Z" class="h-logo__path" transform="translate(-28 -24)" fill="#ea178c"></path></svg>
         </div>
 
         <div id="logo_wrap2" onclick="logo2Click()">
             <img src="home/img/huge.svg">
         </div>
+                
+        <div id="hover_border"></div>
         
 
         
