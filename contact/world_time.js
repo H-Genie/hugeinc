@@ -56,7 +56,7 @@ function updateTime() {
     setTimeout(oneMinutes,remainSeconds);
 
         function oneMinutes() {
-        setInterval(hugeTime,6000);
+        setInterval(hugeTime,60000);
          }
 }
 
