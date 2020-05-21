@@ -66,3 +66,14 @@ function borderOff() {
     document.getElementById('hover_border').style="border-top:0px solid #f4f4f4; border-right:0px solid #f4f4f4; border-bottom:0px solid #f4f4f4; border-left: 0px solid #f4f4f4;";
     }
 }
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("logo_wrap").style="top:52px; opacity:1;";
+    } else {
+        document.getElementById("logo_wrap").style="top:-74px; opacity:0;";
+    }
+        prevScrollpos = currentScrollPos;
+}

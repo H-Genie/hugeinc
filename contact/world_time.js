@@ -13,7 +13,7 @@ function hugeTime() {
 
         //오전오후 판단 함수
         function meridiem(a) { 
-            if(a>=12) {b="PM"} else if(a==24 || a==0) {b="AM"} else if(a<12) {b="AM"}    
+            if(12<=a && a<=23) {b="PM"} else if(a==24) {b="AM"} else if(a<12) {b="AM"}  
             return b;
         }
 
@@ -35,7 +35,7 @@ function hugeTime() {
         document.getElementsByClassName('meridiem')[i].innerHTML=meridiem(hourAdjustment(timeZone[i]));
         
 
-        if(6<=hourAdjustment(timeZone[i]) && hourAdjustment(timeZone[i])<=18) {
+        if(5<=hourAdjustment(timeZone[i]) && hourAdjustment(timeZone[i])<=18) {
             document.getElementsByClassName("office_card")[i].style="color:black; background-color:#fff;";
             document.getElementsByClassName("sign")[i].src="contact/img/am.svg";       
         }

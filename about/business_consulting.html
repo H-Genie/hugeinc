@@ -13,37 +13,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
         <link rel="stylesheet" type="text/css" href="business_consulting.css">
+        <link rel="stylesheet" type="text/css" href="../source/media.css">
+        <link rel="stylesheet" type="text/css" href="media.css">
         <link rel="icon" href="../source/icon.png" sizes="16x16">
-        
-        <script>
-            var header_state=0;
-
-            function logoClick () {
-                if (header_state==0) {
-                    document.getElementById("section_header").style="height:440px;";
-                    document.getElementById("main_extend").style="padding-top:440px";        
-                    document.getElementById("logo_wrap").firstElementChild.src="../home/img/huge.svg";
-                    document.getElementById("logo_wrap").firstElementChild.style="width:60px";
-                    header_state=1;
-                }
-                else {
-                    document.getElementById("section_header").style="height:0px;";
-                    document.getElementById("main_extend").style="padding-top:0px";        
-                    document.getElementById("logo_wrap").firstElementChild.src="../home/img/h.svg";
-                    document.getElementById("logo_wrap").firstElementChild.style="width:20px";
-                    header_state=0;
-                }
-            } 
-        </script>
+        <script type="text/javascript" src="../source/javascript.js"></script>
         
     </head>
 
     <body>
 
         <!--logo-->
-        <div id="logo_wrap" onclick="logoClick()">
-            <img src="../home/img/h.svg">
+        <div id="logo_wrap" onclick="logoClick()" onmouseover="borderOn()" onmouseout="borderOff()">
+            <svg class="h-logo__svg" viewBox="0 0 20 28" xmlns="http://www.w3.org/2000/svg" title="Menu"><path d="M35,24H28V51h7V41h6V51h7V24H41V34H35V24Z" class="h-logo__path" transform="translate(-28 -24)" fill="#ea178c"></path></svg>
         </div>
+
+        <div id="logo_wrap2" onclick="logo2Click()">
+            <img src="../home/img/huge.svg">
+        </div>
+                
+        <div id="hover_border"></div>
+
 
 
         <!--header-->
@@ -56,38 +45,70 @@
                         <p>Today at Huge.</p>
                         <div></div>
                     </li>
-    
+
                     <li>
                         <a href="../work.html">Work.</a>
                         <p>What we've mad.</p>
                         <div></div>
                     </li>
-    
+
                     <li>
                         <a href="../about.html">About.</a>
                         <p>Who we are.</p>
                         <div></div>
                     </li>
-    
+
                     <li>
                         <a href="../careers.html">Careers.</a>
                         <p>Join the team.</p>
                         <div></div>
                     </li>
-    
+
                     <li>
                         <a href="../contact.html">Contact.</a>
                         <p>Get in touch.</p>
                         <div></div>
                     </li>         
                 </ul>
-    
+
                 <div class="gnb_aside">
                     <p>Explore our thought leadership at</p>
                     <a>MAGENTA<span>.</span></a>
                 </div>
+
+                <ul class="menu_wrap_hidden">
+                    <li>
+                        <a href="../index.html"><div class="p_menu_title">Hello.</div></a>
+                        <hr>
+                        <div class="p_menu_describe">Today at Huge.</div>
+                    </li>
+
+                    <li>
+                        <a href="../work.html"><div class="p_menu_title">Work.</div></a>
+                        <hr>
+                        <div class="p_menu_describe">What we've made.</div>
+                    </li>
+
+                    <li>
+                        <a href="../about.html"><div class="p_menu_title">About.</div></a>
+                        <hr>
+                        <div class="p_menu_describe">Who we are.</div>
+                    </li>
+
+                    <li>
+                        <a href="../careers.html"><div class="p_menu_title">Careers.</div></a>
+                        <hr>
+                        <div class="p_menu_describe">Join the team.</div>
+                    </li>
+
+                    <li>
+                        <a href="../contact.html"><div class="p_menu_title">Contact.</div></a>
+                        <hr>
+                        <div class="p_menu_describe">Get in touch.</div>
+                    </li>
+                </ul>
             </nav>
-    
+
         </header>
 
 
