@@ -67,15 +67,17 @@ function borderOff() {
     }
 }
 
+
 var prevScroll = window.pageYOffset;
 window.onscroll = function() {
     var currentScroll = window.pageYOffset;
-
-    if (prevScroll > currentScroll) {
-        document.getElementById("logo_wrap").style="top:52px; opacity:1;";
-    } 
-    else {
-        document.getElementById("logo_wrap").style="top:-74px; opacity:0;";
+    if(currentScroll>200) {
+        if (prevScroll > currentScroll) {
+            document.getElementById("logo_wrap").style="top:52px; opacity:1;";
+        } 
+        else {
+            document.getElementById("logo_wrap").style="top:-74px; opacity:0;";
+        }
+        prevScroll = currentScroll;
     }
-    prevScroll = currentScroll;
 }
