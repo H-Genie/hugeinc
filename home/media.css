@@ -40,3 +40,8 @@
     .bg_img_section_06 {background-image: url(img/hugeinc06m.jpg); background-position-x: 50%; background-position-y: 50%;}
     .bg_img_section_07 {background-image: url(img/hugeinc07m.jpg); background-position-x: 50%; background-position-y: 50%;}
 }
+
+@media screen and (max-width:420px) {
+    #section02_subwraptitle {font-size: 37px;}
+    #section06_subwraptitle {font-size: 29px;}
+}

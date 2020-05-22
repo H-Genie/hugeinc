@@ -67,13 +67,15 @@ function borderOff() {
     }
 }
 
-var prevScrollpos = window.pageYOffset;
+var prevScroll = window.pageYOffset;
 window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
+    var currentScroll = window.pageYOffset;
+
+    if (prevScroll > currentScroll) {
         document.getElementById("logo_wrap").style="top:52px; opacity:1;";
-    } else {
+    } 
+    else {
         document.getElementById("logo_wrap").style="top:-74px; opacity:0;";
     }
-        prevScrollpos = currentScrollPos;
+    prevScroll = currentScroll;
 }
