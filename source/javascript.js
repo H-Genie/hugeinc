@@ -71,9 +71,14 @@ function borderOff() {
 var prevScroll = window.pageYOffset;
 window.onscroll = function() {
     var currentScroll = window.pageYOffset;
-    if(currentScroll>200) {
+    if(currentScroll>100) {
         if (prevScroll > currentScroll) {
+            if (document.body.clientWidth>767) {
             document.getElementById("logo_wrap").style="top:52px; opacity:1;";
+            }
+            else {
+                document.getElementById("logo_wrap").style="top:10px; opacity:1;";
+            }
         } 
         else {
             document.getElementById("logo_wrap").style="top:-74px; opacity:0;";
