@@ -1,0 +1,55 @@
+@import url("../source/common.css");
+
+
+/* breadcrumb */
+main {position: relative;}
+.breadcrumb {padding: 0 12.65823% 0 12.65823%; box-sizing: border-box; position: absolute; top: 45px; display: flex; align-items: center;}
+.breadcrumb h6 {margin-right: 10px;}
+.breadcrumb h6:nth-child(1):hover {color: #ea178c;}
+.rule {width: 160px; height: 1px; margin-right: 10px; border-top: 1px solid black;}
+
+
+/* section_01 */
+.section_01 {width: 100vw; background-image: url(img/scott_sports/section_01.jpg); background-size: cover; background-position: center 30%; padding-top: 200px;}
+
+    .section_01 .container {width: 74.68354%; margin: 0 auto;}
+    .section_01 .container .summary {display: flex; justify-content: space-between;}
+    .section_01 .container .summary h5 {width: 23.72881%; margin-right: 1.69492%;}
+    .section_01 .container .summary h2 {width: 83.05085%; margin-left: 12.71186%;}
+
+    .section_01 .container .detail {margin-top: 900px; padding: 10px 0 110px; box-sizing: border-box; display: flex;}
+    .section_01 .container .detail h5 {width: 23.72881%; margin-right: 1.69492%;}
+    .section_01 .container .detail p {width: 83.05085%; margin-left: 12.71186%;}
+
+
+
+/* section_02 */
+.section_02 {width: 100vw; height: 100vh; background-image: url(img/scott_sports/section_02.jpg); background-size: cover;}
+
+
+
+/* section_03 */
+.section_03 {width: 100vw; background-color: black; padding: 200px 0 250px; box-sizing: border-box;}
+
+    .section_03 .container {width: 74.68354%; margin: 0 auto; position: relative;}
+        .section_03 .container >h3 {width: 66.10169%; font-family: Galaxie-Book;}
+        .section_03 .container >p {width: 66.10169%; margin-top: 52px;}
+
+        .section_03 .img_tile {width: 53%; position: absolute; left: -12.5vw; display: flex; align-items: flex-start;}
+        .section_03 .img_tile img {width: 100%;}
+
+        .section_03 .description {width: 66.10169%; margin: 100px 0 0 33.89831%; border-top: 1px solid white; position: relative;}
+        .section_03 .description h3 {margin: 80px 0 -15px 0;}
+        .section_03 .description p {margin-top: 52px;}
+
+        .section_03 .text_tile {width: 66.10169%; margin-left: 33.89831%; margin-top: 100px; display: flex; position: relative;}
+        .section_03 .text_tile >div {width: 48.71795%; margin-right: 2.5641%; border-top: 1px solid white;}
+        .section_03 .text_tile >div h2 {margin-top: 60px;}
+        .section_03 .text_tile >div h5 {margin-top: 18px;}
+
+
+
+/* section_04 */
+.section_04 {width: 100vw; height: 100vh; background-color: white; position: relative;}
+.section_04 div {width: 90vw; height: 100vh; background-image: url(img/scott_sports/section_04.jpg); background-size: 100% 100%; margin: 0 auto; position: absolute; left: 5vw; bottom: 5vw;}
+

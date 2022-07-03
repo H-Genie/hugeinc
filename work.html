@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+    <head>
+
+        <title>Work.</title>
+
+        <meta charset="UTF-8">
+        <meta name="author" content="H-Genie">
+        <meta name="description" content=" ">
+        <meta name="keywords" content=" ">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" type="text/css" href="work/work.css">
+        <link rel="stylesheet" type="text/css" href="source/media.css">
+        <link rel="stylesheet" type="text/css" href="work/media.css">
+        <link rel="icon" href="source/icon.png" sizes="16x16">
+        <script type="text/javascript" src="source/javascript.js"></script>
+        
+    </head>
+
+    <body>
+
+        <!--logo-->
+        <div id="logo_wrap" onclick="logoClick()" onmouseover="borderOn()" onmouseout="borderOff()">
+            <svg class="h-logo__svg" viewBox="0 0 20 28" xmlns="http://www.w3.org/2000/svg" title="Menu"><path d="M35,24H28V51h7V41h6V51h7V24H41V34H35V24Z" class="h-logo__path" transform="translate(-28 -24)" fill="#ea178c"></path></svg>
+        </div>
+
+        <div id="logo_wrap2" onclick="logo2Click()">
+            <img src="home/img/huge.svg">
+        </div>
+                
+        <div id="hover_border"></div>
+        
+
+        
+        <!--header-->
+        <header id="section_header">
+
+            <nav>
+                <ul class="menu_wrap">
+                    <li>
+                        <a href="index.html">Hello.</a>
+                        <p>Today at Huge.</p>
+                        <div></div>
+                    </li>
+    
+                    <li>
+                        <a href="work.html">Work.</a>
+                        <p>What we've mad.</p>
+                        <div></div>
+                    </li>
+    
+                    <li>
+                        <a href="about.html">About.</a>
+                        <p>Who we are.</p>
+                        <div></div>
+                    </li>
+    
+                    <li>
+                        <a href="careers.html">Careers.</a>
+                        <p>Join the team.</p>
+                        <div></div>
+                    </li>
+    
+                    <li>
+                        <a href="contact.html">Contact.</a>
+                        <p>Get in touch.</p>
+                        <div></div>
+                    </li>         
+                </ul>
+    
+                <div class="gnb_aside">
+                    <p>Explore our thought leadership at</p>
+                    <a>MAGENTA<span>.</span></a>
+                </div>
+
+                <ul class="menu_wrap_hidden">
+                    <li>
+                        <a href="index.html"><div class="p_menu_title">Hello.</div></a>
+                        <hr>
+                        <div class="p_menu_describe">Today at Huge.</div>
+                    </li>
+
+                    <li>
+                        <a href="work.html"><div class="p_menu_title">Work.</div></a>
+                        <hr>
+                        <div class="p_menu_describe">What we've made.</div>
+                    </li>
+
+                    <li>
+                        <a href="about.html"><div class="p_menu_title">About.</div></a>
+                        <hr>
+                        <div class="p_menu_describe">Who we are.</div>
+                    </li>
+
+                    <li>
+                        <a href="careers.html"><div class="p_menu_title">Careers.</div></a>
+                        <hr>
+                        <div class="p_menu_describe">Join the team.</div>
+                    </li>
+
+                    <li>
+                        <a href="contact.html"><div class="p_menu_title">Contact.</div></a>
+                        <hr>
+                        <div class="p_menu_describe">Get in touch.</div>
+                    </li>
+                </ul>
+            </nav>
+    
+        </header>
+
+
+        <main id="main_extend">
+
+        <!--video-->
+        <section class="hero_video">
+
+            <video autoplay muted loop id="play_video">
+
+                <source src="work/img/work.mp4" type="video/mp4">
+                Your browser does not suppor the video tag.
+
+            </video>
+
+            <div class="video_button" onclick="openFullScreen()">
+                <div><img src="work/img/button.svg"></div>
+            </div>
+
+            <script>
+                var play=document.getElementById("play_video");
+                function openFullScreen() {
+                    play.requestFullscreen();
+                }                
+            </script>
+
+        </section>
+
+
+
+        <!--thumbnail-->
+        <div class="work_02">Make something you love.</div>
+
+        <div class="imggrid">
+
+            <a class="imggrid_tile" href="work/scott_sports.html">
+                <h4 class="imggrid_tile_title">Scott Sports.</h4>
+                <div class="imggrid_tile_arrow">
+                    <svg class="arrow-thin-right__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="39.002px" height="26.005px" viewBox="286.5 382.498 39.002 26.005" enable-background="new 286.5 382.498 39.002 26.005" title="Next"><g><polygon fill="#FFFFFF" points="325.041,396.329 325.502,395.861 325.046,395.398 325.432,395.008 325.041,394.612 325.041,394.533 324.963,394.533 313.102,382.498 311.805,383.814 322.367,394.533 286.5,394.533 286.5,396.395 322.354,396.395 311.732,407.172 313.044,408.503 324.977,396.395 325.041,396.395 	"></polygon></g></svg>
+                </div>
+            </a>
+    
+            <a class="imggrid_tile">
+                <h4 class="imggrid_tile_title">Android.</h4>
+                <div class="imggrid_tile_arrow">
+                    <svg class="arrow-thin-right__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="39.002px" height="26.005px" viewBox="286.5 382.498 39.002 26.005" enable-background="new 286.5 382.498 39.002 26.005" title="Next"><g><polygon fill="#FFFFFF" points="325.041,396.329 325.502,395.861 325.046,395.398 325.432,395.008 325.041,394.612 325.041,394.533 324.963,394.533 313.102,382.498 311.805,383.814 322.367,394.533 286.5,394.533 286.5,396.395 322.354,396.395 311.732,407.172 313.044,408.503 324.977,396.395 325.041,396.395 	"></polygon></g></svg>
+                </div>
+            </a>
+    
+            <a class="imggrid_tile">
+                <h4 class="imggrid_tile_title">AMC Theatres.</h4>
+                <div class="imggrid_tile_arrow">
+                    <svg class="arrow-thin-right__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="39.002px" height="26.005px" viewBox="286.5 382.498 39.002 26.005" enable-background="new 286.5 382.498 39.002 26.005" title="Next"><g><polygon fill="#FFFFFF" points="325.041,396.329 325.502,395.861 325.046,395.398 325.432,395.008 325.041,394.612 325.041,394.533 324.963,394.533 313.102,382.498 311.805,383.814 322.367,394.533 286.5,394.533 286.5,396.395 322.354,396.395 311.732,407.172 313.044,408.503 324.977,396.395 325.041,396.395 	"></polygon></g></svg>
+                </div>
+            </a>
+
+            <!--줄바꿈-->
+            <a class="imggrid_tile">
+                <h4 class="imggrid_tile_title">Canada Goose.</h4>
+                <div class="imggrid_tile_arrow">
+                    <svg class="arrow-thin-right__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="39.002px" height="26.005px" viewBox="286.5 382.498 39.002 26.005" enable-background="new 286.5 382.498 39.002 26.005" title="Next"><g><polygon fill="#FFFFFF" points="325.041,396.329 325.502,395.861 325.046,395.398 325.432,395.008 325.041,394.612 325.041,394.533 324.963,394.533 313.102,382.498 311.805,383.814 322.367,394.533 286.5,394.533 286.5,396.395 322.354,396.395 311.732,407.172 313.044,408.503 324.977,396.395 325.041,396.395 	"></polygon></g></svg>
+                </div>
+            </a>
+
+            <a class="imggrid_tile">
+                <h4 class="imggrid_tile_title">Google.</h4>
+                <div class="imggrid_tile_arrow">
+                    <svg class="arrow-thin-right__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="39.002px" height="26.005px" viewBox="286.5 382.498 39.002 26.005" enable-background="new 286.5 382.498 39.002 26.005" title="Next"><g><polygon fill="#FFFFFF" points="325.041,396.329 325.502,395.861 325.046,395.398 325.432,395.008 325.041,394.612 325.041,394.533 324.963,394.533 313.102,382.498 311.805,383.814 322.367,394.533 286.5,394.533 286.5,396.395 322.354,396.395 311.732,407.172 313.044,408.503 324.977,396.395 325.041,396.395 	"></polygon></g></svg>
+                </div>
+            </a>
+
+            <a class="imggrid_tile">
+                <h4 class="imggrid_tile_title">Gucci.</h4>
+                <div class="imggrid_tile_arrow">
+                    <svg class="arrow-thin-right__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="39.002px" height="26.005px" viewBox="286.5 382.498 39.002 26.005" enable-background="new 286.5 382.498 39.002 26.005" title="Next"><g><polygon fill="#FFFFFF" points="325.041,396.329 325.502,395.861 325.046,395.398 325.432,395.008 325.041,394.612 325.041,394.533 324.963,394.533 313.102,382.498 311.805,383.814 322.367,394.533 286.5,394.533 286.5,396.395 322.354,396.395 311.732,407.172 313.044,408.503 324.977,396.395 325.041,396.395 	"></polygon></g></svg>
+                </div>
+            </a>
+
+             <!--줄바꿈-->
+             <a class="imggrid_tile">
+                <h4 class="imggrid_tile_title">Hulu.</h4>
+                <div class="imggrid_tile_arrow">
+                    <svg class="arrow-thin-right__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="39.002px" height="26.005px" viewBox="286.5 382.498 39.002 26.005" enable-background="new 286.5 382.498 39.002 26.005" title="Next"><g><polygon fill="#FFFFFF" points="325.041,396.329 325.502,395.861 325.046,395.398 325.432,395.008 325.041,394.612 325.041,394.533 324.963,394.533 313.102,382.498 311.805,383.814 322.367,394.533 286.5,394.533 286.5,396.395 322.354,396.395 311.732,407.172 313.044,408.503 324.977,396.395 325.041,396.395 	"></polygon></g></svg>
+                </div>
+            </a>
+
+            <a class="imggrid_tile">
+                <h4 class="imggrid_tile_title">Kohl's.</h4>
+                <div class="imggrid_tile_arrow">
+                    <svg class="arrow-thin-right__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="39.002px" height="26.005px" viewBox="286.5 382.498 39.002 26.005" enable-background="new 286.5 382.498 39.002 26.005" title="Next"><g><polygon fill="#FFFFFF" points="325.041,396.329 325.502,395.861 325.046,395.398 325.432,395.008 325.041,394.612 325.041,394.533 324.963,394.533 313.102,382.498 311.805,383.814 322.367,394.533 286.5,394.533 286.5,396.395 322.354,396.395 311.732,407.172 313.044,408.503 324.977,396.395 325.041,396.395 	"></polygon></g></svg>
+                </div>
+            </a>
+
+            <a class="imggrid_tile">
+                <h4 class="imggrid_tile_title">LG.</h4>
+                <div class="imggrid_tile_arrow">
+                    <svg class="arrow-thin-right__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="39.002px" height="26.005px" viewBox="286.5 382.498 39.002 26.005" enable-background="new 286.5 382.498 39.002 26.005" title="Next"><g><polygon fill="#FFFFFF" points="325.041,396.329 325.502,395.861 325.046,395.398 325.432,395.008 325.041,394.612 325.041,394.533 324.963,394.533 313.102,382.498 311.805,383.814 322.367,394.533 286.5,394.533 286.5,396.395 322.354,396.395 311.732,407.172 313.044,408.503 324.977,396.395 325.041,396.395 	"></polygon></g></svg>
+                </div>
+            </a>
+
+             <!--줄바꿈-->
+             <a class="imggrid_tile">
+                <h4 class="imggrid_tile_title">Lenovo.</h4>
+                <div class="imggrid_tile_arrow">
+                    <svg class="arrow-thin-right__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="39.002px" height="26.005px" viewBox="286.5 382.498 39.002 26.005" enable-background="new 286.5 382.498 39.002 26.005" title="Next"><g><polygon fill="#FFFFFF" points="325.041,396.329 325.502,395.861 325.046,395.398 325.432,395.008 325.041,394.612 325.041,394.533 324.963,394.533 313.102,382.498 311.805,383.814 322.367,394.533 286.5,394.533 286.5,396.395 322.354,396.395 311.732,407.172 313.044,408.503 324.977,396.395 325.041,396.395 	"></polygon></g></svg>
+                </div>
+            </a>
+
+            <a class="imggrid_tile">
+                <h4 class="imggrid_tile_title">NBC Universal.</h4>
+                <div class="imggrid_tile_arrow">
+                    <svg class="arrow-thin-right__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="39.002px" height="26.005px" viewBox="286.5 382.498 39.002 26.005" enable-background="new 286.5 382.498 39.002 26.005" title="Next"><g><polygon fill="#FFFFFF" points="325.041,396.329 325.502,395.861 325.046,395.398 325.432,395.008 325.041,394.612 325.041,394.533 324.963,394.533 313.102,382.498 311.805,383.814 322.367,394.533 286.5,394.533 286.5,396.395 322.354,396.395 311.732,407.172 313.044,408.503 324.977,396.395 325.041,396.395 	"></polygon></g></svg>
+                </div>
+            </a>
+
+            <a class="imggrid_tile">
+                <h4 class="imggrid_tile_title">Nike.</h4>
+                <div class="imggrid_tile_arrow">
+                    <svg class="arrow-thin-right__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="39.002px" height="26.005px" viewBox="286.5 382.498 39.002 26.005" enable-background="new 286.5 382.498 39.002 26.005" title="Next"><g><polygon fill="#FFFFFF" points="325.041,396.329 325.502,395.861 325.046,395.398 325.432,395.008 325.041,394.612 325.041,394.533 324.963,394.533 313.102,382.498 311.805,383.814 322.367,394.533 286.5,394.533 286.5,396.395 322.354,396.395 311.732,407.172 313.044,408.503 324.977,396.395 325.041,396.395 	"></polygon></g></svg>
+                </div>
+            </a>
+            
+             <!--줄바꿈-->
+             <a class="imggrid_tile">
+                <h4 class="imggrid_tile_title">Pfizer.</h4>
+                <div class="imggrid_tile_arrow">
+                    <svg class="arrow-thin-right__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="39.002px" height="26.005px" viewBox="286.5 382.498 39.002 26.005" enable-background="new 286.5 382.498 39.002 26.005" title="Next"><g><polygon fill="#FFFFFF" points="325.041,396.329 325.502,395.861 325.046,395.398 325.432,395.008 325.041,394.612 325.041,394.533 324.963,394.533 313.102,382.498 311.805,383.814 322.367,394.533 286.5,394.533 286.5,396.395 322.354,396.395 311.732,407.172 313.044,408.503 324.977,396.395 325.041,396.395 	"></polygon></g></svg>
+                </div>
+            </a>
+
+            <a class="imggrid_tile">
+                <h4 class="imggrid_tile_title">Procter & Gamble.</h4>
+                <div class="imggrid_tile_arrow">
+                    <svg class="arrow-thin-right__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="39.002px" height="26.005px" viewBox="286.5 382.498 39.002 26.005" enable-background="new 286.5 382.498 39.002 26.005" title="Next"><g><polygon fill="#FFFFFF" points="325.041,396.329 325.502,395.861 325.046,395.398 325.432,395.008 325.041,394.612 325.041,394.533 324.963,394.533 313.102,382.498 311.805,383.814 322.367,394.533 286.5,394.533 286.5,396.395 322.354,396.395 311.732,407.172 313.044,408.503 324.977,396.395 325.041,396.395 	"></polygon></g></svg>
+                </div>
+            </a>
+
+            <a class="imggrid_tile">
+                <h4 class="imggrid_tile_title">Randstad.</h4>
+                <div class="imggrid_tile_arrow">
+                    <svg class="arrow-thin-right__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="39.002px" height="26.005px" viewBox="286.5 382.498 39.002 26.005" enable-background="new 286.5 382.498 39.002 26.005" title="Next"><g><polygon fill="#FFFFFF" points="325.041,396.329 325.502,395.861 325.046,395.398 325.432,395.008 325.041,394.612 325.041,394.533 324.963,394.533 313.102,382.498 311.805,383.814 322.367,394.533 286.5,394.533 286.5,396.395 322.354,396.395 311.732,407.172 313.044,408.503 324.977,396.395 325.041,396.395 	"></polygon></g></svg>
+                </div>
+            </a>
+
+            <!--줄바꿈-->
+            <a class="imggrid_tile">
+                <h4 class="imggrid_tile_title">Telus.</h4>
+                <div class="imggrid_tile_arrow">
+                    <svg class="arrow-thin-right__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="39.002px" height="26.005px" viewBox="286.5 382.498 39.002 26.005" enable-background="new 286.5 382.498 39.002 26.005" title="Next"><g><polygon fill="#FFFFFF" points="325.041,396.329 325.502,395.861 325.046,395.398 325.432,395.008 325.041,394.612 325.041,394.533 324.963,394.533 313.102,382.498 311.805,383.814 322.367,394.533 286.5,394.533 286.5,396.395 322.354,396.395 311.732,407.172 313.044,408.503 324.977,396.395 325.041,396.395 	"></polygon></g></svg>
+                </div>
+            </a>
+
+            <a class="imggrid_tile">
+                <h4 class="imggrid_tile_title">Zelle.</h4>
+                <div class="imggrid_tile_arrow">
+                    <svg class="arrow-thin-right__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="39.002px" height="26.005px" viewBox="286.5 382.498 39.002 26.005" enable-background="new 286.5 382.498 39.002 26.005" title="Next"><g><polygon fill="#FFFFFF" points="325.041,396.329 325.502,395.861 325.046,395.398 325.432,395.008 325.041,394.612 325.041,394.533 324.963,394.533 313.102,382.498 311.805,383.814 322.367,394.533 286.5,394.533 286.5,396.395 322.354,396.395 311.732,407.172 313.044,408.503 324.977,396.395 325.041,396.395 	"></polygon></g></svg>
+                </div>
+            </a>
+
+        </div>
+
+
+
+        <!--client-->
+        <div class="work_04">
+
+            <div class="work_04_wrap">
+
+                <div class="left">
+                    <hr>
+                    <h4>Select client.</h4>
+                </div>
+
+                <ul class="right">
+                    <li><img src="work/img/client/01.png" alt="American Express logo"></li>                                     
+                    <li><img src="work/img/client/02.png" alt="fca logo"></li>                  
+                    <li><img src="work/img/client/03.png" alt="enel logo"></li>                  
+                    <li><img src="work/img/client/04.png" alt="estee lauder logo"></li>
+                        
+                    <li><img src="work/img/client/05.png" alt="four seasons logo"></li>                                     
+                    <li><img src="work/img/client/06.png" alt="Eli Lily logo logo"></li>                  
+                    <li><img src="work/img/client/07.png" alt="lowe's logo"></li>                  
+                    <li><img src="work/img/client/08.png" alt="lvmh logo"></li>
+                    
+                    <li><img src="work/img/client/09.png" alt="macdonald logo"></li>                                     
+                    <li><img src="work/img/client/10.png" alt="nestle logo"></li>                  
+                    <li><img src="work/img/client/11.png" alt="td bank logo"></li>                  
+                    <li><img src="work/img/client/12.png" alt="thompson reuters logo"></li>  
+
+                    <li><img src="work/img/client/13.png" alt="timewarner logo"></li>                                     
+                    <li><img src="work/img/client/14.png" alt="united logo"></li>                  
+                    <li><img src="work/img/client/15.png" alt="ups logo"></li>                  
+                    <li><img src="work/img/client/16.png" alt="united technology logo"></li>  
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <!--magenta-->
+        <div class="magenta work_magenta_bg">
+
+            <div> <!--rgba 0.7-->
+                <div class="magenta_wrap">
+                    <a class="left">
+                        <img src="work/img/thumbnail/magenta.gif">
+                    </a>
+
+                    <a class="right">
+                        <h2>Don't Copy Star Trek.</h2>
+                        <p>Why fictional futures limit our ability to innovate — and how to find better inspiration for tomorrow’s technology.</p>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        </main>
+
+
+         <!--footer-->
+        <footer class="footer">
+
+            <div class="wrap">
+
+                <div class="left">
+                    <div><img src="source/huge_footer.svg"></div>
+                    <p class="font_white">Make something you love.</p>
+                </div>
+
+                <ul class="right">
+                    <li>
+                        <a href="index.html">Hello</a>
+                        <a href="work.html">Work</a>
+                        <a href="about.html">About</a>
+                        <a href="careers.html">Careers</a>
+                        <a href="contact.html">Contact</a>                        
+                    </li>
+
+                    <p>© 2020 Huge LLC. Legal. <br>
+                        CCPA Privacy Notice <br>
+                        Modern Slavery Act Statement
+                    </p>
+                </ul>
+
+            </div>
+
+        </footer>
+
+
+    <!--body 끝--></body> 
+
+</html>

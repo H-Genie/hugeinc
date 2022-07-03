@@ -1,0 +1,41 @@
+@import url("../source/common.css");
+
+
+/* video */
+.poster {width: 100%; height: 100%; background-image: url(img/hero_video.png); background-size: cover; background-position: 50% 50%;}
+
+
+/* section_02 */
+.careers_02 {width: 100%; background-color: white;}
+    .careers_02 .container {margin: 0 auto; padding: 150px 12.171186%;}
+        .careers_02 .container h3 {font-family: Galaxie-Book; margin-bottom: 20px;}
+        .careers_02 .container p {margin-bottom: 60px;}
+        .careers_02 .container a {color: white; padding: 30px 45px; box-sizing: border-box; background-color: black; display: inline-block; cursor: pointer; transition: opacity 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);;}
+        .careers_02 .container a:hover {opacity: 0.5;}
+
+
+/* section_03 */
+.careers_03 {width: 100%; background-color: white;}
+
+    .careers_03 .container {width: 74.68354%; margin: 0 auto; padding: 70px 0 140px; display: flex;justify-content: center;}
+
+    .careers_03 .content {width: 66.10169%; margin-left: 1.69492%;}
+        .careers_03 .content .title {font-family: Galaxie-Book; margin-bottom: 70px;}
+        .careers_03 .content .text p:nth-child(1) {padding-bottom: 25px; box-sizing: border-box;}
+        .careers_03 .content .text p:nth-child(2) {padding: 25px 0; box-sizing: border-box;}
+
+
+/* section_04 */
+.careers_04 {width: 100%; background-color: black;}
+    
+    .careers_04 .container {width: 74.68354%; margin: 0 auto; padding: 200px 0; box-sizing: border-box; display: flex;}
+
+    .careers_04 .content {width: 66.10169%; margin-left: 1.69492%;}
+    .careers_04 .content li {margin-bottom: 80px; display: flex; justify-content: space-between;}
+    .careers_04 .content li div {width: 87.17949%;}
+    .careers_04 .content li div h2 {margin-bottom: 10px;}
+    
+
+
+/* magenta */
+.careers_magenta_bg {background-image: url(img/magenta_background.png);}

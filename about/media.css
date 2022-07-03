@@ -1,0 +1,78 @@
+@media screen and (max-width:999px) {
+    /* about_us */
+    .about_us {padding: 100px 0;}
+    .about_us_container {display: block; width: 83.05085%;}
+    .about_us_content {width: auto; margin-left: 0;}
+    .about_us_content .h3_serif {font-size: 42px; line-height: 54px; letter-spacing: -1px;}
+    .about_us_title {margin-bottom: 50px;}
+
+    /* how we do it */
+    .our_service {padding: 100px 0;}
+    .our_service_content_container {display: block; width: 100%;}
+    .our_service_content {width: auto;}
+    .our_service_content_text {column-count: 1;}
+    .our_service_content_infographic {width: auto; max-width: 480px; padding: 2% 0 0 5%; margin-left: 0; margin-top: 70px;}
+    .our_service_content_infographic img {padding: 0%;}
+
+    .our_service_list_container {display: block;}
+    .our_service_list {width: 66.10169%; margin-top: 28px;}    
+    .our_service_list p {line-height: 28px;}
+    
+    /* our culture (made with love) */
+    .our_culture_container {width: 83.05085%;}
+    .our_culture_title {margin: 50px 0 100px;}
+    .our_culture_list li {width: 48.97959%; height: auto; margin: 0 0 40px 0;}
+    .our_culture_list li:nth-child(11) {display: none;}
+    .our_culture_list li:nth-child(12) {display: none;}
+    .our_culture_background {width: 45%; bottom: -6vh;}
+
+    /* our office */
+    .our_office_container {width: 83.05085%; padding: 100px 0;}
+    .our_office_list li {width: 46.97959%; margin: 0 16px 25px 0;}
+
+    /* our leadership */
+    .our_leadership_container {width: 83.05085%; padding: 100px 0;}  
+    .our_leadership_list h5 {font-size: 21px; line-height: 28px;}
+}
+
+@media screen and (max-width:767px) {
+    /* about_us */
+    .about_us {padding: 60px 0;}
+    .about_us_container {width: 74.35897%;}
+    .about_us_content .h3_serif {font-size: 30px; line-height: 42px; letter-spacing: -1px;}
+
+    /* how we do it */
+    .our_service_content h4 {font-size: 40px;}
+    .our_service_content_infographic {width: 100%; padding: 0; margin: 30px auto;}
+
+    .our_service_list {width: 100%;}
+    .our_service_list h6 {font-size: 19px; margin-bottom: 20px;}
+    .our_service_list li {padding-bottom: 10px; margin-bottom: 10px;}
+
+    /* our culture (made with love) */
+    .our_culture_container {width: 74.35897%; padding: 60px 0 20px;}
+    .our_culture_title {margin: 50px 0 40px;}
+    .our_culture_title h2 {font-size: 40px; line-height: 44px; letter-spacing: -1px;}
+    
+    .our_culture_list li {width: 100%;}
+    .our_culture_list li h5 {font-size: 19px; line-height: 26px;}
+    .our_culture_list li:nth-child(8) {display: none;}
+    .our_culture_list li:nth-child(10) {display: none;}
+
+    .our_culture_background {display: none;}
+
+    /* our office */
+    .our_office_container {width: 74.35897%; padding: 60px 0;}
+    .our_office_list li {width: 100%;}
+    .our_office_list h5 {font-size: 19px; line-height: 26px;}
+
+    /* our leadership */
+    .our_leadership_container {width: 74.35897%; padding: 60px 0;}
+
+    .our_leadership_list {padding-top: 0;}
+    .our_leadership_list li {width: 100%; margin-left: 0; padding-top: 20px; margin-bottom: 25px;}
+    .our_leadership_list li:nth-child(-n+3) {border-top: 1px solid rgba(0,0,0,0.3);}
+    .our_leadership_list li:nth-child(1) {border: none;}
+
+    .our_leadership_list h5 {font-size: 19px; line-height: 26px;}
+}   

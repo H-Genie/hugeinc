@@ -1,0 +1,26 @@
+@media screen and (max-width:999px) {
+  .content h3 {font-size: 42px; line-height: 54px;}
+  .contact_02 .content .text {width: 100%; margin-top: 60px;}
+  .contact_02 .content .text >p {margin-bottom: 20px;}
+
+  .contact_03 ul {width: 83.05085%;}
+  .contact_03 a {width: 50%; min-height: 44vh;}
+  .contact_03 li {padding: 80px 50px 10px; height: 100%;}
+  .contact_03 li h4 {font-size: 42px; line-height: 48px; margin-bottom: 30px;}
+  .contact_03 li h5 {font-size: 21px; line-height: 28px;}
+}
+
+@media screen and (max-width:767px) {
+    .contact_02 .container {display: block;}
+    .section_subtitle {width: 82.75862%;}
+    .section_subtitle_rule_white {width: 37.5%;}
+    .contact_02 .content {width: 100%;}
+    .content h3 {font-size: 30px; line-height: 42px; letter-spacing: -1px;}
+    
+    .contact_03 ul {width: 100%; padding: 0 25px 80px;}
+    .contact_03 a {width: 100%; min-height: auto; max-height: 57vh;}
+    .contact_03 li {padding: 40px 25px;}
+    .contact_03 li h4 {font-size: 32px;}
+    .contact_03 li h5 {font-size: 19px; line-height: 26px;}
+    .contact_03 li p:nth-of-type(3) {height: auto;}
+}   

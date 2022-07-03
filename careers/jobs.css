@@ -1,0 +1,25 @@
+@import url("../source/common.css");
+
+
+/* section_01 */
+.section_01 {width: 100vw; height: 70vh; background-image: url(img/jobs_hero.jpg); background-size: cover; background-position: center;}
+
+.section_01 .opacity {background-color: rgba(0,0,0,0.1); width: 100%; height: 100%;}
+
+.section_01 .container {width: 74.68354%; height: 100%; margin: 0 auto; display: flex; align-items: flex-end; padding-bottom: 60px;}
+
+
+/* section_02 */
+.section_02 {width: 100vw; background-color: white;}
+.section_02 .container {width: 74.68354%; padding: 140px 0; margin: 0 auto; display: flex;}
+
+.section_02 .subtitle {width: 32.20339%;}
+.section_02 .subtitle hr {width: 47.36842%; margin-bottom: 20px;}
+
+
+.section_02 .content {width: 66.10169%; margin-left: 1.69492%;}
+.section_02 .content ul li >div {display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 150px;}
+.section_02 .content ul li a {padding-top: 36px; display: block; width: 45.7036%; cursor: pointer;}
+.section_02 .content ul li a:hover {color: #ea178c;}
+.section_02 .content ul li a hr {width: 300px; margin-top: 36px; color: #9D9D9D;}
+
