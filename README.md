@@ -1,1 +1,1 @@
-https://h-genie.github.io/hugeinc/
+https://hugeinc.vercel.app
